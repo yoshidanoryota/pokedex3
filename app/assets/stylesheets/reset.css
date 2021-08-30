@@ -1,0 +1,15 @@
+/* ========== reset CSS ========== */
+* { margin: 0; padding: 0; box-sizing: border-box; 
+    color: rgb(12, 12, 12);
+    font-family: sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li{
+    list-style: none;
+  }
+
+/* ========== reset CSS ========== */
