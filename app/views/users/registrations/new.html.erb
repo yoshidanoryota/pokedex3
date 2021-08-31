@@ -1,0 +1,43 @@
+<div class="user-form-body">
+  <div class="form-wrapper">
+    <h1 class="login"><span class="ball-image"></span>新規登録<span class="ball-image"></span></h1>
+    <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      
+      
+
+       <div class="form-item">
+        <%= f.label :■ユーザーネーム %>
+        <%= f.text_field :name, required: "required",placeholder:"15文字以下で入力してください"%>
+      </div>
+
+      <div class="form-item">
+        <%= f.label :■メールアドレス %><br />
+        <%= f.email_field :email, autofocus: true,required: "required",placeholder:"メールアドレスを入力してください"%>
+      </div>
+
+      <div class="form-item">
+        <%= f.label :■パスワード（英数字混合６文字以上） %><br />
+        <%= f.password_field :password, required: "required",placeholder:"パスワードを入力してください" %>
+      </div>
+
+      <div class="form-item">
+        <%= f.label :■パスワード（確認） %><br />
+        <%= f.password_field :password_confirmation, required: "required",placeholder:"同じパスワードを入力してください" %>
+      </div>
+
+      <div class="check-box">
+        <input type="checkbox" class="checkbox">規約に同意する
+      </div>
+
+      <div class="button-panel">
+        <%= f.submit "新規登録", class: "button" %>
+      </div>
+
+      
+    <% end %>
+
+    
+  </div>
+</div>  
+
+
