@@ -1,3 +1,382 @@
-// Place all the styles related to the infomations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* ========== index ========== */
+.infomation-body{
+  height: 100vh;
+  width: 100vw;
+}
+.infomation-second-body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.select{
+  width: 95%;
+  height:100%;
+  background-image: url('switch.png');
+  background-size: contain ;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+}
+
+.clock{
+  position:absolute;
+  left:58%;
+  top:12%;
+  width: 20%;
+}
+
+.clock-font{
+  color: #ece8e8;
+}
+
+.select-div{
+  position:absolute;
+	left:25%;
+  top: 17%;
+  width: 50%;
+  height: 50%;
+}
+
+.select-li{
+  display: inline;
+}
+
+.select-ul{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.select-list-1{
+  display: inline;
+  display: inline-block;
+  background: #ffffff;
+  width: 149px;
+  height: 149px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(kotiku.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+.select-list-1:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.select-list-2{
+  display: inline;
+  display: inline-block;
+  background: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(nibanme.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.select-list-2:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+
+}
+
+
+.select-list-3{
+  display: inline;
+  display: inline-block;
+  background: #ffffff;
+  width: 149px;
+  height: 149px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(hajimete.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.select-list-3:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+
+}
+.select-list-4{
+  display: inline;
+  display: inline-block;
+  background: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(toiawase.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.select-list-4:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+
+}
+
+.select-monster{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* ========== ゲンガー画像 ========== */
+.first-monster{
+  background-image: url(genga.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 330px;
+  height: 340px;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  
+}
+/* ========== ゲンガー画像 ========== */
+
+/* ========== リザードン画像 ========== */
+.second-monster{
+  background-image: url(rizardon.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  top: 38%;
+  left: 24%;
+  display: none;
+}
+/* ========== リザードン画像 ========== */
+
+
+/* ========== ニャース画像 ========== */
+.third-monster{
+  background-image: url(nyasu.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  display: none;
+}
+/* ========== ニャース画像 ========== */
+
+/* ========== ラッキー画像 ========== */
+.force-monster{
+  background-image: url(lukky.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 180px;
+  height: 170px;
+  position: absolute;
+  top: 42%;
+  left: 25%;
+  display: none;
+}
+/* ========== ラッキー画像 ========== */
+
+/* ========== コダック画像 ========== */
+.fifth-monster{
+  background-image: url(kodaku.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 200px;
+  height: 185px;
+  position: absolute;
+  top: 40%;
+  left: 26%;
+  display: none;
+}
+/* ========== コダック画像 ========== */
+
+
+
+/* ========== ゲンガー文 ========== */
+.first-message-box{
+  position: absolute;
+  top: 48%;
+  left:40%;
+  width: 34%;
+  height: 15%;
+  border-radius: 10px;
+  background-image: url(frame.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #e9bde5;
+  border-left: solid 20px #913e7f;
+  margin: 0; 
+  padding: 0;
+  font-size: 23px;
+  font-weight: bold;
+  
+}
+.first-message{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+/* ========== ゲンガー文 ========== */
+
+
+/* ========== 書体読み込み ========== */
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+/* ========== 書体読み込み ========== */
+
+/* ========== リザードン文 ========== */
+.second-message-box{
+  position: absolute;
+  top: 48%;
+  left:40%;
+  width: 34%;
+  height: 15%;
+  border-radius: 10px;
+  background-image: url(frame.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #ec9898;
+  border-left: solid 20px #e23b1e;
+  margin: 0; 
+  padding: 0;
+  font-size: 23px;
+  font-weight: bold;
+  display: none;
+}
+.second-message{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+/* ========== リザードン文 ========== */
+
+/* ========== ニャース文 ========== */
+.third-message-box{
+  position: absolute;
+  top: 48%;
+  left:40%;
+  width: 34%;
+  height: 15%;
+  border-radius: 10px;
+  background-image: url(frame.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #ecc598;
+  border-left: solid 20px #e27435;
+  margin: 0; 
+  padding: 0;
+  font-size: 23px;
+  display: none;
+}
+.third-message{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+/* ========== ニャース文 ========== */
+
+/* ========== ラッキー文 ========== */
+.force-message-box{
+  position: absolute;
+  top: 48%;
+  left:40%;
+  width: 34%;
+  height: 15%;
+  border-radius: 10px;
+  background-image: url(frame.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #f3b5d9;
+  border-left: solid 20px #f342b8;
+  margin: 0; 
+  padding: 0;
+  font-size: 23px;
+  display: none;
+}
+.force-message{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+/* ========== ラッキー文 ========== */
+
+/* ========== コダック文 ========== */
+.fifth-message-box{
+  position: absolute;
+  top: 48%;
+  left:40%;
+  width: 34%;
+  height: 15%;
+  border-radius: 10px;
+  background-image: url(frame.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #eaf09b;
+  border-left: solid 20px #cfbe1f;
+  margin: 0; 
+  padding: 0;
+  font-size: 23px;
+  display: none;
+}
+.fifth-message{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+/* ========== コダック文 ========== */
+
+
+
+
+/* ========== index ========== */
+
+
+
