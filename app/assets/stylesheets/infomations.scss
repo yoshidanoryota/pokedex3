@@ -1,6 +1,6 @@
 /* ========== index ========== */
 .infomation-body{
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
 }
 .infomation-second-body{
@@ -22,7 +22,7 @@
 .clock{
   position:absolute;
   left:58%;
-  top:12%;
+  top:14%;
   width: 20%;
 }
 
@@ -33,7 +33,7 @@
 .select-div{
   position:absolute;
 	left:25%;
-  top: 17%;
+  top: 23%;
   width: 50%;
   height: 50%;
 }
@@ -159,10 +159,10 @@
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 330px;
-  height: 340px;
+  width: 340px;
+  height: 350px;
   position: absolute;
-  top: 35%;
+  top: 43%;
   left: 20%;
   
 }
@@ -174,10 +174,10 @@
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  top: 38%;
+  top: 50%;
   left: 24%;
   display: none;
 }
@@ -190,10 +190,10 @@
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 190px;
-  height: 190px;
+  width: 180px;
+  height: 180px;
   position: absolute;
-  top: 40%;
+  top: 51%;
   left: 25%;
   display: none;
 }
@@ -208,7 +208,7 @@
   width: 180px;
   height: 170px;
   position: absolute;
-  top: 42%;
+  top: 53%;
   left: 25%;
   display: none;
 }
@@ -220,10 +220,10 @@
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 200px;
-  height: 185px;
+  width: 250px;
+  height: 180px;
   position: absolute;
-  top: 40%;
+  top: 52%;
   left: 26%;
   display: none;
 }
@@ -234,10 +234,10 @@
 /* ========== ゲンガー文 ========== */
 .first-message-box{
   position: absolute;
-  top: 48%;
+  top: 61%;
   left:40%;
-  width: 34%;
-  height: 15%;
+  width: 36%;
+  height: 17%;
   border-radius: 10px;
   background-image: url(frame.png);
   background-size: contain ;
@@ -267,10 +267,10 @@
 /* ========== リザードン文 ========== */
 .second-message-box{
   position: absolute;
-  top: 48%;
+  top: 61%;
   left:40%;
-  width: 34%;
-  height: 15%;
+  width: 36%;
+  height: 17%;
   border-radius: 10px;
   background-image: url(frame.png);
   background-size: contain ;
@@ -295,10 +295,10 @@
 /* ========== ニャース文 ========== */
 .third-message-box{
   position: absolute;
-  top: 48%;
+  top: 61%;
   left:40%;
-  width: 34%;
-  height: 15%;
+  width: 36%;
+  height: 17%;
   border-radius: 10px;
   background-image: url(frame.png);
   background-size: contain ;
@@ -322,10 +322,10 @@
 /* ========== ラッキー文 ========== */
 .force-message-box{
   position: absolute;
-  top: 48%;
+  top: 61%;
   left:40%;
-  width: 34%;
-  height: 15%;
+  width: 36%;
+  height: 17%;
   border-radius: 10px;
   background-image: url(frame.png);
   background-size: contain ;
@@ -349,10 +349,10 @@
 /* ========== コダック文 ========== */
 .fifth-message-box{
   position: absolute;
-  top: 48%;
+  top: 61%;
   left:40%;
-  width: 34%;
-  height: 15%;
+  width: 36%;
+  height: 17%;
   border-radius: 10px;
   background-image: url(frame.png);
   background-size: contain ;
@@ -373,7 +373,50 @@
 }
 /* ========== コダック文 ========== */
 
+.notice-body{
+  width: 70vh;
+  height: 80vh;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: scroll;
+}
 
+.notice-title{
+  width: 100%;
+  height:50px;
+  text-align: center;
+  font-weight: 1000;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-image: url(kinokoko.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: 27%;
+  background-color: #d6f1db;
+  border-radius: 10px 10px 0 0;
+}
+
+.notice-area{
+  width: 100%;
+  height: 120px;
+  background-color:#e3ebee;
+  border: 2px dotted #333233;
+  padding: 2px 2px 0 2px;
+}
+
+.notice-day{
+  text-align: right;
+  font-size: 12px;
+  padding-top: 10px;
+  
+}
+
+.notice-text-area{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
 
 
 /* ========== index ========== */
