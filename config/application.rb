@@ -18,3 +18,12 @@ module Pokedex3
     # the framework and any gems in your application.
   end
 end
+
+module TimeFormatSandbox
+  class Application < Rails::Application
+    # ...
+
+    # タイムゾーンを日本時間に設定
+    config.time_zone = 'Asia/Tokyo'
+  end
+end

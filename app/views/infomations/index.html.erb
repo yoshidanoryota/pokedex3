@@ -5,19 +5,43 @@
           <button class="nav__toggle" aria-expanded="false" type="button">
             menu
           </button>
+          
           <ul class="nav__wrapper">
-            <li class="nav__item"><a href="#">マイページ</a></li>
-            <li class="nav__item"><a href="#">ログイン</a></li>
-            <li class="nav__item"><a href="#">ログアウト</a></li>
-
+            
+            <% unless user_signed_in? %>
+              <li class="nav__item"><%= link_to "マイページ", root_path %></li>
+              <li class="nav__item"><%= link_to 'ログイン', new_user_session_path %></li>
+            <% else%>
+              <li class="nav__item"><%= link_to "管理者権限でログインしています", root_path %></li>
+              <li class="nav__item"><%= link_to "マイページ", root_path %></li>
+              <li class="nav__item"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete%></li>
+            <%end%>
           </ul>
         </nav>
       </div>
   </header>
 
+ 
 
+<%# モーダルウィンドウ new %>
+<div id="modal-new">
+  <%= form_with model: @infomation, class: 'form', local: true do |f| %>
+  
+    <div class="info-text-form" id="info-text-form">
+      <%= f.text_area :text, class: 'infomation-text-area', placeholder: '内容を入力してください' %>
+    </div>
+      
+    <div class="text-button" id="text-button">
+      <%= f.submit '投稿する', class: 'text-submit' %>
+    </div>  
+  <% end %>
+</div>
+  <%# モーダルウィンドウ new %>
 
 <div class="infomation-body">
+  <div class="site-title">
+      <h1>タイトル</h1>
+    </div>
   <div class="infomation-second-body">
     <div class="select">
       <div class="clock">
@@ -29,17 +53,17 @@
 
         
         <ul class="select-ul">
-            <li class="select-li" id="select-list-1">
-            <a href="#"><button class="select-list-1" ></button><a>
+            <li class="select-li " id="select-list-1">
+              <%= link_to "", root_path, class: 'btn select-list-1' %>
             </li>
             <li class="select-li" id="select-list-2">
-            <button class="select-list-2" ><a href="#"><a></button>
+              <%= link_to "", root_path, class: 'btn select-list-2' %>
             </li>
             <li class="select-li" id="select-list-3">
-            <button class="select-list-3" ><a href="#"><a></button>
+              <%= link_to "", fresh_infomations_path, class: 'btn select-list-3' %>
             </li>
             <li class="select-li" id="select-list-4">
-            <button class="select-list-4" ><a href="#"><a></button>
+              <%= link_to "", new_contact_path, class: 'btn select-list-4' %>
             </li>
         </ul>
 
@@ -81,6 +105,7 @@
 
           <div class="force-message-box" id="force-message-box">
             <p class="force-message">はじめての方は一回読んでみてね!<br>
+            このサイトでできることが書いてあるよ<br>
             新規登録もここからできるよ!
             </p>
           </div>
@@ -98,17 +123,46 @@
 
 </div>
 
+<div class="info-new" >
+ <button class="info-new-btn" id="modal-open-new" >お知らせ追加</button>
+</div>
+
 <div class="notice-body">
-  <h1 class="notice-title">お 知 ら せ</h1>
   
-  <div class="notice-area">
-    <div class="notice-day">
-    2020年12月31日(月)
+  <h1 class="notice-title">お 知 ら せ</h1>
+
+
+  <%# お知らせ一覧%>
+  <% @infomations.each do |info|%>
+  <% wd = ["日", "月", "火", "水", "木", "金", "土"]%>
+    <div class="notice-area">
+      <div class="notice-day">
+      <%= info.created_at.strftime("%Y年%m月%d日(#{wd[info.created_at.wday]})")%>
+      </div>
+      <div class="notice-text">
+      <%= info.text%>
+      </div>
+      
+      <p class="modal-open-delete" id="modal-open-delete">削除する</p>
+      <%= link_to "削除する", infomation_path(info.id), method: :DELETE, id: 'notice-delete'%>
+
+      <%# モーダルウィンドウ 削除 %>
+        <div id="modal-delete" class="info-delete-form">
+          <div class="info-delete-text">
+            <div class="delete-text-field">
+              <%= info.text %>
+            </div>
+          </div>
+          <div class="text-button" id="text-submit">
+            <p class="info-delete-question">こちらの投稿を削除しますか?</p>
+            <button id="text-submit" class="info-delete-button">削除する</button>
+          </div>    
+        </div>
+      <%# モーダルウィンドウ 削除 %>
+
     </div>
-    <div class="notice-text">
-    期間限定レイドバトルが更新！8月23日(月)8時59分まで色違いの『シャンデラ』『キョダイゲンガー』などが出現！
-    </div>
-  </div>
+  <% end %>  
+  <%# お知らせ一覧%>
 
 </div>  
 
