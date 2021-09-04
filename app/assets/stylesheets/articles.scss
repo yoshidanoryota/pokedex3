@@ -1,0 +1,482 @@
+/* ========== index ========== */
+
+
+.w-btn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.action-btn{
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  color: #ffff;
+  background-color: rgb(61, 79, 238);
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.action-btn:hover{
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+}
+
+.action-text{
+  color: #ffff;
+}
+
+.article-second{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  height: 145vh;
+}
+
+.ranking{
+  width: 300px;
+  height: 550px;
+  background-color: #ffff;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+}
+
+.ranking-field{
+  height: 10%;
+  background-color:rgb(252, 222, 243) ;
+  text-align: center;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 2px dotted rgb(155, 155, 161);
+}
+
+.ranking-text{
+  display: block;
+  margin-top: 15px;
+  font-weight: bolder;
+  font-family:inherit;
+}
+
+.new-article{
+  width: 500px;
+  height: 130vh;
+  background-color: rgb(255, 255, 255);
+  margin: 0 50px 0 50px;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+ overflow: scroll;
+}
+
+.new-article-link{
+  border-bottom: 2px dotted rgb(116, 116, 117);
+  text-align: center;
+  height: 117px;
+  background-color: rgb(214, 237, 252);
+  padding: 0 7px 10px 7px;
+
+}
+
+
+
+
+
+.new-article-title{
+  cursor: pointer;
+  margin-left: 17px;
+  font-family:inherit;
+  font-size: 17px;
+  font-weight:lighter;
+}
+
+.new-article-title:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  font-weight: bolder;
+}
+
+.new-article-user{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.monster-choice{
+  margin-top: 2px;
+  
+}
+
+
+
+
+
+.mini-monster{
+  background-image: url(051.png) ;
+  width: 50px;
+  height: 50px;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.new-article-info{
+  font-size: 16px;
+  margin-left: 5px;
+  font-weight:lighter;
+  
+}
+
+.new-article-user:hover{
+  color: rgb(53, 40, 231);
+}
+
+
+
+
+.old-article{
+  width: 300px;
+  height: 550px;
+  background-color: #ffff;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+}
+
+.blue-title{
+  background-color: rgb(61, 79, 238);
+  color: #ffff;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 4px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+
+/* ========== index ========== */
+
+
+/* ========== new ========== */
+.article-new-body{
+  max-width: 100vw;
+  height: 370vh;
+}
+
+.article-new-main{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 245, 247);
+  border:4px solid rgb(61, 79, 238);
+  border-radius: 10px;
+  margin: 0 auto;
+
+}
+
+.article-lecture{
+  padding-top: 30px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+
+.article-new-second{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.article-new-title{
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #ffff;
+  width: 500px;
+  margin-left: 30px;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  background-color: rgb(230, 244, 247);
+}
+
+.article-new-second{
+  width: 100vw;
+  height: 100vh;
+}
+
+.party-title{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 1200px;
+  height: 70px;
+  background-color: rgb(61, 79, 238);
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  
+}
+
+.party-title-text{
+  font-size: 27px;
+  display: block;
+  font-weight: bolder;
+  font-family:inherit;
+  line-height: 27px;
+  padding: 20px;
+  color: #ffff;
+  
+}
+
+
+
+.title-field{
+  width: 1000px;
+  font-size: 20px;
+  height: 35px;
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+.pokemon-list{
+  display: flex;
+  margin-top: 30px;
+}
+
+.party-monster{
+  background-color: rgb(230, 244, 247);
+  margin-left: 20px;
+  width: 430px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+}
+
+.party-monster-block{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 35px;
+}
+
+.party-monster-text{
+  display: block;
+  font-family:inherit;
+  width: 85px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.pokemon-name-field{
+  width: 250px;
+  font-size: 15px;
+  height: 30px;
+  padding-top: 2px;
+}
+
+.party-monster-number{
+  display: block;
+  font-family:inherit;
+  width: 58px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.pokemon-number-field{
+  width: 100px;
+  font-size: 15px;
+  height: 30px;
+  padding-top: 2px;
+}
+
+.party-text{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.article_text-field{
+  width: 700px;
+  height: 500px;
+  overflow: scroll;
+  font-size: 15px;
+}
+/* ========== new ========== */
+
+
+/* ========== show ========== */
+
+.article-show-second{
+  width: 90%;
+  background-color: rgb(230, 244, 247);
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+}
+
+.show-monster-title{
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.show-monster-user{
+  font-size: 20px;
+}
+
+.show-monster-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.show-monster-body{
+  display: flex;
+}
+
+.show-monster-alone{
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  background-image: url(border.jpeg);
+  margin: 10px;
+
+}
+
+
+
+.show-weapon-area{
+  margin-top: 5px;
+
+  
+}
+
+.show-monster-weapon{
+  margin-right: 5px;
+
+}
+
+.show-pokemon-name{
+  font-weight: bolder;
+  margin-bottom: 3px;
+}
+
+.show-text-area{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  
+}
+
+.article-show-text{
+  width: 650px;
+  background-image: url(border.jpeg);
+  margin: 0 auto;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px dotted rgb(87, 86, 86);
+}
+
+.show-text{
+  text-align: left;
+  padding: 10px;
+}
+.comment-title{
+  margin-bottom: 30px;
+}
+
+.comment-area{
+  width: 600px;
+  background-color:rgb(230, 244, 247);
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-height: 600px;
+  overflow: scroll;
+}
+
+.not-comment{
+  width: 600px;
+  background-color:#ffff;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+}
+
+.comment-text-area{
+  width: 100%;
+  border: 1px solid rgb(149, 149, 151);
+  margin: 5px 0 ;
+  border-radius: 10px;
+  background-color: rgb(192, 229, 247);
+  padding:10px
+}
+.comment-body{
+  text-align: left;
+}
+.comment-btn{
+  margin: 20px 0 40px 0 ;
+}
+
+.comment-new-btn{
+  width: 180px;
+  height: 40px;
+  background-color: rgb(0, 153, 255);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+
+.comment-new-btn:hover{
+  opacity: 0.7;
+}
+.comment-user:hover{
+  color: rgb(63, 119, 202);
+}
+
+.comment-delete{
+  text-align: right;
+  font-size: 14px;
+}
+
+.comment-delete:hover{
+  color: rgb(63, 119, 202);
+}
+
+/* ========== show ========== */
+
+
+/* ========== edit ========== */
+
+.article-edit-main{
+  width: 100%;
+  height: 2070px;
+  background-color: rgb(240, 245, 247);
+  border:4px solid rgb(61, 79, 238);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.edit-title{
+  margin: 20px 0 0 20px;
+}
+
+/* ========== edit ========== */
