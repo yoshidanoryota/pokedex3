@@ -34,12 +34,17 @@ class ArticlesController < ApplicationController
   def success
   end
 
+  def search
+    @articles = Article.search(params[:keyword])
+  end
+
   def show
     @article = Article.find(params[:id])
     @comment = Comment.new
     @comments = @article.comments.all
   end
 
+  
   private
   
   def article_params

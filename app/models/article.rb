@@ -2,6 +2,20 @@ class Article < ApplicationRecord
   belongs_to :user
   has_many :comments, dependent: :destroy
 
+  def self.search(search)
+    if search != ""
+      Article.where('first_pokemon LIKE(?)', "%#{search}%").
+        or Article.where('second_pokemon LIKE(?)', "%#{search}%").
+          or Article.where('third_pokemon LIKE(?)', "%#{search}%").
+            or Article.where('force_pokemon LIKE(?)', "%#{search}%").
+              or Article.where('fifth_pokemon LIKE(?)', "%#{search}%").
+                or Article.where('sixth_pokemon LIKE(?)', "%#{search}%")
+    else
+      Article.all.order(created_at: "DESC") .limit(20)
+    end
+  end
+
+
   with_options presence: true do
     validates :title,
     :first_pokemon,:first_pokemon_special,:first_pokemon_item,:first_pokemon_temper_id,:first_pokemon_hp,

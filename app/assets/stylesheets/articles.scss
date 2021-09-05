@@ -35,7 +35,7 @@
   display: flex;
   justify-content: center;
   margin: 50px;
-  height: 145vh;
+  height: 140vh;
 }
 
 .ranking{
@@ -522,6 +522,71 @@
   font-size: 18px;
 }
 
-
-
 /* ========== edit ========== */
+
+/* ========== search ========== */
+
+.search-body{
+  margin-top: 20px;
+}
+
+.search-title{
+font-family: 'M PLUS Rounded 1c', sans-serif;
+background-color: rgb(61, 79, 238);
+color: #ffff;
+font-size: 25px;
+text-align: center;
+width: 100%;
+
+}
+
+
+.search-second{
+  width: 725px;
+  background-color: azure;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  min-height: 94vh;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+}
+
+.serch-article{
+  margin-bottom: 40px;
+}
+
+.search-form{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.search-input{
+  width: 250px;
+  height: 35px;
+  font-size: 19;
+  
+}
+
+.search-btn{
+  width: 50px;
+  height: 35px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+
+.serch-article-link{
+  border: 2px dotted rgb(116, 116, 117);
+  height: 121px;
+  background-color: rgb(224, 237, 247);
+  padding: 0 10px 0 5px;
+  width: 600px;
+  border:3px solid rgb(61, 79, 238);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* ========== search ========== */
