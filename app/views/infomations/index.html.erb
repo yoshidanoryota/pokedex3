@@ -1,46 +1,8 @@
- <header>
-      <div class="wrapper header__wrapper ">
-        <h1 class="brand">タイトル</h1>
-        <nav class="nav">
-          <button class="nav__toggle" aria-expanded="false" type="button">
-            menu
-          </button>
-          
-          <ul class="nav__wrapper">
-            
-            <% unless user_signed_in? %>
-              <li class="nav__item"><%= link_to "マイページ", root_path %></li>
-              <li class="nav__item"><%= link_to 'ログイン', new_user_session_path %></li>
-            <% else%>
-              <li class="nav__item"><%= link_to "管理者権限でログインしています", root_path %></li>
-              <li class="nav__item"><%= link_to "マイページ", root_path %></li>
-              <li class="nav__item"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete%></li>
-            <%end%>
-          </ul>
-        </nav>
-      </div>
-  </header>
-
- 
-
-<%# モーダルウィンドウ new %>
-<div id="modal-new">
-  <%= form_with model: @infomation, class: 'form', local: true do |f| %>
-  
-    <div class="info-text-form" id="info-text-form">
-      <%= f.text_area :text, class: 'infomation-text-area', placeholder: '内容を入力してください' %>
-    </div>
-      
-    <div class="text-button" id="text-button">
-      <%= f.submit '投稿する', class: 'text-submit' %>
-    </div>  
-  <% end %>
-</div>
-  <%# モーダルウィンドウ new %>
+<%= render "layouts/header"%>
 
 <div class="infomation-body">
-  <div class="site-title">
-      <h1>タイトル</h1>
+  <div class="site-title-index">
+      <span class="myu-logo"></span><h1 class="site-title-top">POKEbrary TOPページ</h1>
     </div>
   <div class="infomation-second-body">
     <div class="select">
@@ -171,3 +133,22 @@
         <h1 class="footer-message">当サイトのイラスト画像等は全て使用許可を得ております</h1>
       </div>
 </footer>
+
+
+
+
+
+<%# モーダルウィンドウ new %>
+<div id="modal-new">
+  <%= form_with model: @infomation, class: 'form', local: true do |f| %>
+  
+    <div class="info-text-form" id="info-text-form">
+      <%= f.text_area :text, class: 'infomation-text-area', placeholder: '内容を入力してください' %>
+    </div>
+      
+    <div class="text-button" id="text-button">
+      <%= f.submit '投稿する', class: 'text-submit' %>
+    </div>  
+  <% end %>
+</div>
+  <%# モーダルウィンドウ new %>

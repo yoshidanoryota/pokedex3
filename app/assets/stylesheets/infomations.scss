@@ -9,16 +9,35 @@
   justify-content: center;
 }
 
-.site-title{
+.site-title-index{
   width: 36%;
   height: 10%;
   background-color: #ffffff;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 20px;
   text-align: center;
   margin-left: 32%;
   margin-right: 32%;
   padding-top: 7px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.myu-logo{
+  width: 65px;
+  height: 65px;
+  background-image: url(myu.png);
+  display: inline-block;
+  background-size: contain ;
+  background-repeat: no-repeat;
+}
+
+.site-title-top{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 5px;
+  text-align: center;
+  margin-right: 15px;
 }
 
 .select{
@@ -196,50 +215,50 @@
 /* ========== リザードン画像 ========== */
 
 
-/* ========== ニャース画像 ========== */
+/* ========== マリルリ画像 ========== */
 .third-monster{
-  background-image: url(nyasu.png);
+  background-image: url(mariruri.png);
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 190px;
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  display: none;
+}
+/* ========== マリルリ画像 ========== */
+
+/* ========== ロトム画像 ========== */
+.force-monster{
+  background-image: url(rotom.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
   position: absolute;
   top: 51%;
   left: 25%;
   display: none;
 }
-/* ========== ニャース画像 ========== */
+/* ========== ロトム画像 ========== */
 
 /* ========== ラッキー画像 ========== */
-.force-monster{
+.fifth-monster{
   background-image: url(lukky.png);
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 180px;
-  height: 170px;
+  width: 230px;
+  height: 160px;
   position: absolute;
-  top: 53%;
-  left: 25%;
-  display: none;
-}
-/* ========== ラッキー画像 ========== */
-
-/* ========== コダック画像 ========== */
-.fifth-monster{
-  background-image: url(kodaku.png);
-  background-size: contain ;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  width: 250px;
-  height: 180px;
-  position: absolute;
-  top: 52%;
+  top: 55%;
   left: 26%;
   display: none;
 }
-/* ========== コダック画像 ========== */
+/* ========== ラッキー画像 ========== */
 
 
 
@@ -304,8 +323,35 @@
 }
 /* ========== リザードン文 ========== */
 
-/* ========== ニャース文 ========== */
+/* ========== マリルリ文 ========== */
 .third-message-box{
+  position: absolute;
+  top: 61%;
+  left:40%;
+  width: 36%;
+  height: 17%;
+  border-radius: 10px;
+  background-image: url(frame.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #acb6f0;
+  border-left: solid 20px #3546e2;
+  margin: 0; 
+  padding: 0;
+  font-size: 23px;
+  display: none;
+}
+.third-message{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+/* ========== マリルリ文 ========== */
+
+/* ========== ロトム文 ========== */
+.force-message-box{
   position: absolute;
   top: 61%;
   left:40%;
@@ -326,39 +372,12 @@
   font-size: 23px;
   display: none;
 }
-.third-message{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-/* ========== ニャース文 ========== */
-
-/* ========== ラッキー文 ========== */
-.force-message-box{
-  position: absolute;
-  top: 61%;
-  left:40%;
-  width: 36%;
-  height: 17%;
-  border-radius: 10px;
-  background-image: url(frame.png);
-  background-size: contain ;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  color: #232323;
-  background: #f3b5d9;
-  border-left: solid 20px #f342b8;
-  margin: 0; 
-  padding: 0;
-  font-size: 23px;
-  display: none;
-}
 .force-message{
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-/* ========== ラッキー文 ========== */
+/* ========== ロトム文 ========== */
 
-/* ========== コダック文 ========== */
+/* ========== ラッキー文 ========== */
 .fifth-message-box{
   position: absolute;
   top: 61%;
@@ -373,8 +392,8 @@
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #232323;
-  background: #eaf09b;
-  border-left: solid 20px #cfbe1f;
+  background: #ffaae6;
+  border-left: solid 20px #ec44d0;
   margin: 0; 
   padding: 0;
   font-size: 23px;
@@ -383,7 +402,7 @@
 .fifth-message{
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-/* ========== コダック文 ========== */
+/* ========== ラッキー文 ========== */
 
 .notice-body{
   width: 70vh;
@@ -524,7 +543,7 @@ border-radius: 10px;
 .infomation-text-area{
   width: 400px;
   height: 200px;
-  
+  font-size: 16px;
 }
 
 .info-delete-form{

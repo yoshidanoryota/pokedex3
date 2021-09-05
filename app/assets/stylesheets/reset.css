@@ -14,6 +14,8 @@
 
   body{
     background-image: url(mizutama.png);
+    background-size: contain ;
+    background-color: rgb(194, 237, 253);
   }
 
 /* ========== reset CSS ========== */

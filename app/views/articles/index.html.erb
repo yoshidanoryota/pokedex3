@@ -1,25 +1,4 @@
- <header>
-      <div class="wrapper header__wrapper ">
-        <%= link_to "タイトル", root_path,class:'brand' %>
-        <nav class="nav">
-          <button class="nav__toggle" aria-expanded="false" type="button">
-            menu
-          </button>
-          
-          <ul class="nav__wrapper">
-            
-            <% unless user_signed_in? %>
-              <li class="nav__item"><%= link_to "マイページ", root_path %></li>
-              <li class="nav__item"><%= link_to 'ログイン', new_user_session_path %></li>
-            <% else%>
-              <li class="nav__item"><%= link_to "管理者権限でログインしています", root_path %></li>
-              <li class="nav__item"><%= link_to "マイページ", root_path %></li>
-              <li class="nav__item"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete%></li>
-            <%end%>
-          </ul>
-        </nav>
-      </div>
-  </header>
+<%= render "layouts/header"%>
 
 <div class="w-btn">
 
@@ -39,50 +18,57 @@
     <div class="ranking">
     <h1 class="blue-title">ーランキングー</h1>
       <div class="ranking-field">
-        <span class="ranking-text">1位　ゴリランダー </span>
+        <span class="ranking-text">1位　ザシアン </span>
         <span class="mini-monster"></span>
       </div>
 
       <div class="ranking-field">
-        <span class="ranking-text">1位　ゴリランダー </span>
+        <span class="ranking-text">2位　ザシアン </span>
         <span class="mini-monster"></span>
       </div>
 
       <div class="ranking-field">
-        <span class="ranking-text">1位　ゴリランダー </span>
+        <span class="ranking-text">3位　ザシアン </span>
         <span class="mini-monster"></span>
       </div>
 
     </div>
 
     <div class="new-article">
+    
+      
         <h1 class="blue-title">ー新着記事ー
         </h1>
+        <div class="scroll">
 
-        <% @articles.each do |article| %>
-          <div class="new-article-link">
-            <%= link_to "#{article.title}", article_path(article.id), class:'new-article-title' %>
+          <% @articles.each do |article| %>
+          
+            <div class="new-article-link">
+              <div class="new-article-info">
+                <span class="new-article-user">投稿者：</span><%= link_to "#{article.user.name}", user_path(article.user_id), class:'new-article-user' %>
+              </div>
+              <%= link_to "#{article.title}", article_path(article.id), class:'new-article-title' %>
 
-            <div class="monster-choice">
-               <%= render partial: "monster01", locals: { article: article } %>
-               <%= render partial: "monster02", locals: { article: article } %>
-               <%= render partial: "monster03", locals: { article: article } %>
-               <%= render partial: "monster04", locals: { article: article } %>
-               <%= render partial: "monster05", locals: { article: article } %>
-               <%= render partial: "monster06", locals: { article: article } %>
+              <div class="monster-choice">
+                <%= render partial: "monster01", locals: { article: article } %>
+                <%= render partial: "monster02", locals: { article: article } %>
+                <%= render partial: "monster03", locals: { article: article } %>
+                <%= render partial: "monster04", locals: { article: article } %>
+                <%= render partial: "monster05", locals: { article: article } %>
+                <%= render partial: "monster06", locals: { article: article } %>
+              </div>
+
+            
             </div>
+        
 
-            <div class="new-article-info">
-              投稿者：<%= link_to "#{article.user.name}", user_path(article.user_id), class:'new-article-user' %>
-            </div>
-          </div>
+          <%end%>  
+        </div>  
 
-        <%end%>  
-
+    
 
 
-
-      </div>
+    </div>
 
     
 

@@ -1,9 +1,15 @@
+<%= link_to "構築トップに戻る", articles_path, class:'article_path' %>
 <div class="article-show-body">
   <div class="article-show-second">
     
-    <h1 class="show-monster-title"><%= @article.title %><br>
+    <h1 class="show-monster-title"><%= @article.title %>
+    <%if user_signed_in? && current_user.id == @article.user_id%>
+    <span clas="edit-link"><%= link_to "編集する", edit_article_path(@article.id), class:'edit-btn' %></span>
+    <%end%>
+    
+    </h1><br>
      <%= link_to "#{@article.user.name}", user_path(@article.user_id), class:'show-monster-user' %>
-    </h1>
+    
    
 
     <div class="show-monster-main">
@@ -32,7 +38,7 @@
 
     <h3 class="comment-title">コメント</h3>
     <%  unless @comments.present? %>
-    <div>-----------この記事にコメントはありません----------</div>
+    <div>---------------------この記事にコメントはありません--------------------</div>
     <%end%>
     <div class="comment-area">
       
@@ -42,7 +48,7 @@
         <div class="comment-body">
           <div class="comment-user"><%= link_to comment.user.name, user_path(comment.user_id), class:'comment-user'%></div>
           <div class="comment-text"><%=safe_join(comment.comment_text.split("\n"),tag(:br))%></div>
-          <% if comment.user_id == current_user.id%>
+          <% if current_user.id && comment.user_id == current_user.id%>
           <div class="comment-delete"><%= link_to "投稿したコメントを削除する", "/articles/#{comment.article_id}/comments/#{comment.id}", method: :DELETE, class: 'comment-delete' %></div>
           <%end%>
         </div>
@@ -51,9 +57,15 @@
       
     </div>
 
+    <%if user_signed_in? %>
     <div class="comment-btn">
-      <button class="comment-new-btn" id="modal-open-comment" >この投稿にコメントする</button>
+      <button class="comment-new-btn" id="modal-open-comment" >この投稿にコメントする</button>  
     </div>
+
+     <%else%>
+    <div class="login-must">コメントするには<%= link_to 'ログイン', new_user_session_path, class: 'login-must-link' %>が必要です</div>
+    <%end%>
+   
 
   </div>
 </div>

@@ -1,0 +1,19 @@
+ <header>
+      <div class="wrapper header__wrapper ">
+        <h1 class="brand"><%= link_to "POKEbrary", root_path, class: 'site-title' %></h1>
+        <nav class="nav">
+          
+          <ul class="nav__wrapper">
+            
+            <% unless user_signed_in? %>
+              <li class="nav__item"></li>
+              <li class="nav__item"><%= link_to 'ログイン', new_user_session_path %></li>
+            <% else%>
+              <li class="nav__item"><%= link_to "管理者権限でログインしています", root_path %></li>
+              <li class="nav__item"><%= link_to "マイページ", user_path(current_user.id) %></li>
+              <li class="nav__item"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete%></li>
+            <%end%>
+          </ul>
+        </nav>
+      </div>
+  </header>

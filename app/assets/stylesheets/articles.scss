@@ -62,30 +62,34 @@
   margin-top: 15px;
   font-weight: bolder;
   font-family:inherit;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
 }
 
 .new-article{
-  width: 500px;
-  height: 130vh;
-  background-color: rgb(255, 255, 255);
+  width: 530px;
+  height: 1000px;
+  background-color: rgb(224, 237, 247);
   margin: 0 50px 0 50px;
   border-radius: 10px;
   border:4px solid rgb(61, 79, 238);
   box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
- overflow: scroll;
+ 
+}
+
+.scroll{
+  overflow: scroll;
+  height: 950px;
+  border-radius: 10px;
 }
 
 .new-article-link{
-  border-bottom: 2px dotted rgb(116, 116, 117);
-  text-align: center;
+  border: 2px dotted rgb(116, 116, 117);
   height: 117px;
-  background-color: rgb(214, 237, 252);
-  padding: 0 7px 10px 7px;
+  background-color: rgb(224, 237, 247);
+  padding: 0 10px 0 5px;
 
 }
-
-
-
 
 
 .new-article-title{
@@ -94,30 +98,25 @@
   font-family:inherit;
   font-size: 17px;
   font-weight:lighter;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .new-article-title:hover{
   transform: scale(1.2);
   transition-duration: 0.5s;
   font-weight: bolder;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .new-article-user{
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 15px;
 }
-
-.monster-choice{
-  margin-top: 2px;
-  
-}
-
-
-
 
 
 .mini-monster{
-  background-image: url(051.png) ;
-  width: 50px;
+  background-image: url(03.png) ;
+  width: 70px;
   height: 50px;
   background-size: contain ;
   background-repeat: no-repeat;
@@ -129,7 +128,6 @@
   font-size: 16px;
   margin-left: 5px;
   font-weight:lighter;
-  
 }
 
 .new-article-user:hover{
@@ -315,6 +313,16 @@
 
 /* ========== show ========== */
 
+.article_path{
+  font-size: 19px;
+  color: rgb(56, 72, 218);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.article_path:hover{
+  opacity: 0.5;
+}
+
 .article-show-second{
   width: 90%;
   background-color: rgb(230, 244, 247);
@@ -326,7 +334,6 @@
 }
 
 .show-monster-title{
-  margin-bottom: 30px;
   padding-top: 30px;
 }
 
@@ -334,11 +341,16 @@
   font-size: 20px;
 }
 
+.show-monster-user:hover{
+  color: rgb(63, 119, 202);
+}
+
 .show-monster-main{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .show-monster-body{
@@ -395,6 +407,7 @@
 }
 .comment-title{
   margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .comment-area{
@@ -478,5 +491,37 @@
 .edit-title{
   margin: 20px 0 0 20px;
 }
+
+
+
+.edit-btn{
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffff;
+  background-color: rgb(61, 79, 238);
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.edit-btn:hover{
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+}
+
+.login-must{
+  margin-bottom: 30px;
+}
+
+.login-must-link{
+  color: rgb(87, 114, 238);
+  font-size: 18px;
+}
+
+
 
 /* ========== edit ========== */
