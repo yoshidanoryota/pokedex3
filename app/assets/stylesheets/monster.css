@@ -7,6 +7,11 @@
   display: inline-block;
 }
 
+.monster-icon:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .monster-01{
   background-image: url(01.png) ;
 }
@@ -412,6 +417,10 @@
 
 .monster-101{
   background-image: url(101.png) ;
+}
+
+.monster-102{
+  background-image: url(102.png) ;
 }
 
 .monster-999{

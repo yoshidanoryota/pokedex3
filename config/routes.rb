@@ -27,6 +27,17 @@ Rails.application.routes.draw do
    end
 
 
+   resources :characters, only: [:index] do
+    collection do
+      get 'n0100'
+      get 'n0200'
+      get 'n0300'
+      get 'character'
+      
+     end
+   end
+
+
 end
 
 

@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :show, :edit]
+  before_action :article_find, only: [:update, :show, :edit]
 
   def index
     @articles = Article.all.order(created_at: "DESC") .limit(20)
@@ -19,11 +21,10 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(params[:id])
+    
   end
 
   def update
-    @article = Article.find(params[:id])
     if @article.update(article_params)
      redirect_to article_path(@article.id)
     else
@@ -35,17 +36,20 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    @articles = Article.search(params[:keyword])
+    @articles = Article.search(params[:keyword]).order(created_at: "DESC")
   end
 
   def show
-    @article = Article.find(params[:id])
     @comment = Comment.new
     @comments = @article.comments.all
   end
 
   
   private
+
+  def article_find
+    @article = Article.find(params[:id])
+  end
   
   def article_params
       params.require(:article).permit(:title,
