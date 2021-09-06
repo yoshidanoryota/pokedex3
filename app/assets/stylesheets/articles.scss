@@ -98,14 +98,12 @@
   font-family:inherit;
   font-size: 17px;
   font-weight:lighter;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid black;
+  
 }
 
 .new-article-title:hover{
-  transform: scale(1.2);
-  transition-duration: 0.5s;
-  font-weight: bolder;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  font-weight: bold;
 }
 
 .new-article-user{
@@ -128,6 +126,8 @@
   font-size: 16px;
   margin-left: 5px;
   font-weight:lighter;
+  display: flex;
+  justify-content: space-between;
 }
 
 .new-article-user:hover{
@@ -153,6 +153,16 @@
   text-align: center;
   padding-bottom: 4px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.old-article-title{
+  font-size: 20px;
+  color: rgb(61, 79, 238);
+  margin: 0 auto;
+}
+
+.old-title-article{
+  text-align: center;
 }
 
 
@@ -216,6 +226,7 @@
   margin: 0 auto;
   margin-top: 30px;
   border-radius: 10px;
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
   
 }
 
@@ -255,6 +266,7 @@
   align-items: flex-start;
   border-radius: 10px;
   border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
 }
 
 .party-monster-block{
@@ -325,16 +337,25 @@
 
 .article-show-second{
   width: 90%;
-  background-color: rgb(230, 244, 247);
+  
   margin: 0 auto;
   text-align: center;
   margin-top: 50px;
   border-radius: 10px;
   border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+
+  background-image: url(mokuro.jpeg);
+  background-size:cover ;
+  background-color: transparent;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
 }
 
 .show-monster-title{
-  padding-top: 30px;
+  font-size: 33px;
+  margin-top: 68px;
+
 }
 
 .show-monster-user{
@@ -361,10 +382,10 @@
   width: 400px;
   text-align: center;
   border-radius: 10px;
-  border:4px solid rgb(61, 79, 238);
+  border:3px solid rgb(61, 79, 238);
   background-image: url(border.jpeg);
   margin: 10px;
-
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
 }
 
 
@@ -394,11 +415,12 @@
 
 .article-show-text{
   width: 650px;
-  background-image: url(border.jpeg);
+  background-image: url(borde.jpeg);
+  background-color: #ffff;
   margin: 0 auto;
   font-size: 16px;
-  border-radius: 10px;
-  border: 2px dotted rgb(87, 86, 86);
+  
+  border:1px solid rgb(0, 0, 0);
 }
 
 .show-text{
@@ -412,7 +434,7 @@
 
 .comment-area{
   width: 600px;
-  background-color:rgb(230, 244, 247);
+ 
   margin: 0 auto;
   margin-bottom: 50px;
   max-height: 600px;
@@ -486,6 +508,7 @@
   border:4px solid rgb(61, 79, 238);
   border-radius: 10px;
   margin: 0 auto;
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
 }
 
 .edit-title{
@@ -552,6 +575,11 @@ width: 100%;
   min-height: 94vh;
   border:4px solid rgb(61, 79, 238);
   box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  background-image: url(mokuro.jpeg);
+  background-size:cover ;
+  background-color: transparent;
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
 }
 
 .serch-article{
@@ -585,9 +613,74 @@ width: 100%;
   background-color: rgb(224, 237, 247);
   padding: 0 10px 0 5px;
   width: 600px;
-  border:3px solid rgb(61, 79, 238);
+  border:2px solid rgb(61, 79, 238);
   border-radius: 10px;
   margin-top: 15px;
 }
 
 /* ========== search ========== */
+
+
+/* ========== all ========== */
+.all-title{
+  background-color: rgb(61, 79, 238);
+  color: #ffff;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.article-all-main{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.all-article{
+  margin-top: 20px;
+  width: 725px;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  min-height: 94vh;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  padding-bottom: 20px;
+  background-image: url(mokuro.jpeg);
+  background-size:cover ;
+  background-color: transparent;
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
+}
+
+.pagination>li>a {          
+  border: none;
+  color: #696969;
+  font-size: 20px;
+}
+
+.all-day{
+  margin-left: auto;
+  display: inline-block;
+}
+
+
+
+.paginate-field{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border:2px solid rgb(61, 79, 238);
+  width: 600px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(224, 237, 247);
+  height: 40px;
+  line-height: 40px;
+}
+
+
+/* ========== all ========== */

@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :show, :edit]
+  before_action :authenticate_user!, only: [:new, :edit]
   before_action :article_find, only: [:update, :show, :edit]
 
   def index
@@ -36,12 +36,16 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    @articles = Article.search(params[:keyword]).order(created_at: "DESC")
+    @articles = Article.search(params[:keyword]).order(created_at: "DESC").page(params[:page]).per(10)
   end
 
   def show
     @comment = Comment.new
     @comments = @article.comments.all
+  end
+
+  def all
+    @articles = Article.all.order(created_at: "DESC").page(params[:page]).per(10)
   end
 
   

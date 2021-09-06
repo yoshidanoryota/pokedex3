@@ -22,8 +22,7 @@ class InfomationsController < ApplicationController
     redirect_to root_path
   end
 
-def fresh
-end
+
 
 
 

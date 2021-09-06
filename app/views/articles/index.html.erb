@@ -45,7 +45,8 @@
           
             <div class="new-article-link">
               <div class="new-article-info">
-                <span class="new-article-user">投稿者：</span><%= link_to "#{article.user.name}", user_path(article.user_id), class:'new-article-user' %>
+                投稿者：<span class="new-article-user"></span><%= link_to "#{article.user.name}", user_path(article.user_id), class:'new-article-user' %>
+                 <div class="all-day"><%= article.created_at.strftime("%Y年%m月%d日")%></div>
               </div>
               <%= link_to "#{article.title}", article_path(article.id), class:'new-article-title' %>
 
@@ -75,7 +76,7 @@
     <div class="old-article">
       <h1 class="blue-title">ー注目記事ー</h1>
         <div class="old-article-link">
-
+          <div class="old-title-article">記事の一覧は<%= link_to "こちら", all_articles_path, class:'old-article-title' %></div>
         </div>
     </div>
 

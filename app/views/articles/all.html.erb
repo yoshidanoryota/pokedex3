@@ -1,22 +1,15 @@
 <%= link_to "構築トップに戻る", articles_path, class:'article_path' %>
-<div class="search-main">
-  <div class="search-body">
-    <div class="search-second">
-      <h1 class="search-title">記事検索</h1>
+<div class="article-all-main">
 
-      <%= form_with(url: search_articles_path, local: true, method: :get, class: "search-form") do |form| %>
-        <%= form.text_field :keyword, placeholder: "ポケモン名", class: "search-input" %>
-        <%= form.submit "検索", class: "search-btn" %>
-      <% end %>
-
-
-      <div class="serch-article">
+  
+    <div class="all-article">
+    <h1 class="all-title">投稿一覧</h1>
       <% @articles.each do |article| %>
       
         <div class="serch-article-link">
             <div class="new-article-info">
                 投稿者：<span class="new-article-user"></span><%= link_to "#{article.user.name}", user_path(article.user_id), class:'new-article-user' %>
-                 <div class="all-day"><%= article.created_at.strftime("%Y年%m月%d日")%></div>
+                <div class="all-day"><%= article.created_at.strftime("%Y年%m月%d日")%></div>
             </div>
           <%= link_to "#{article.title}", article_path(article.id), class:'new-article-title' %>
 
@@ -32,12 +25,12 @@
 
       
       <%end%>
-
       <div class="paginate-field">
         <%= paginate @articles %>
       </div>
     </div>
-    </div>  
 
-  </div>
-</div>  
+
+
+  
+</div>

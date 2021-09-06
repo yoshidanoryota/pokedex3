@@ -4,7 +4,7 @@
     
     <h1 class="show-monster-title"><%= @article.title %>
     <%if user_signed_in? && current_user.id == @article.user_id%>
-    <span clas="edit-link"><%= link_to "編集する", edit_article_path(@article.id), class:'edit-btn' %></span>
+      <span clas="edit-link"><%= link_to "編集する", edit_article_path(@article.id), class:'edit-btn' %></span>
     <%end%>
     
     </h1><br>
@@ -48,7 +48,7 @@
         <div class="comment-body">
           <div class="comment-user"><%= link_to comment.user.name, user_path(comment.user_id), class:'comment-user'%></div>
           <div class="comment-text"><%=safe_join(comment.comment_text.split("\n"),tag(:br))%></div>
-          <% if current_user.id && comment.user_id == current_user.id%>
+          <% if user_signed_in?  && comment.user_id == current_user.id%>
           <div class="comment-delete"><%= link_to "投稿したコメントを削除する", "/articles/#{comment.article_id}/comments/#{comment.id}", method: :DELETE, class: 'comment-delete' %></div>
           <%end%>
         </div>
