@@ -2,7 +2,7 @@
 <div class="search-main">
   <div class="search-body">
     <div class="search-second">
-      <h1 class="search-title">記事検索</h1>
+      <h1 class="search-title">記事一覧・検索</h1>
 
       <%= form_with(url: search_articles_path, local: true, method: :get, class: "search-form") do |form| %>
         <%= form.text_field :keyword, placeholder: "ポケモン名", class: "search-input" %>
@@ -11,6 +11,9 @@
 
 
       <div class="serch-article">
+      <%unless @articles.present? %>
+      結果が見つかりません
+      <%else%>
       <% @articles.each do |article| %>
       
         <div class="serch-article-link">
@@ -30,7 +33,7 @@
           </div>
         </div>
 
-      
+      <%end%>
       <%end%>
 
       <div class="paginate-field">

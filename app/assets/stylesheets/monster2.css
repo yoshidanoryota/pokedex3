@@ -14,3 +14,14 @@
 .nnn{
   background-image: url(nnn.png);
 }
+
+
+.monster-icon2{
+  width: 75px;
+  height: 70px;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+}
+

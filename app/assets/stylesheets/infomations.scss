@@ -1,28 +1,36 @@
 /* ========== index ========== */
-.infomation-body{
-  height: 80vh;
-  max-width: 1500px;
-  min-width: 1430px;
+.center{
+  text-align: center;
 }
+
+.infomation-body{
+  height: 620px;
+}
+
 .infomation-second-body{
   height: 100%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title-index{
+  margin-top: 40px;
 }
 
 .site-title-index{
-  width: 36%;
-  height: 10%;
+
+  width: 500px;
+  height: 60px;
   background-color: #ffffff;
   margin-top: 40px;
   margin-bottom: 20px;
-  text-align: center;
-  margin-left: 32%;
-  margin-right: 32%;
+  margin: 0 auto;
   padding-top: 7px;
+  padding-bottom: 3px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  border: 2px solid #97aef8;
 }
 
 .myu-logo{
@@ -42,20 +50,29 @@
 }
 
 .select{
-  width: 95%;
+  text-align: center;
+  width: 100%;
   height:100%;
-  background-image: url('switch.png');
-  background-size: contain ;
-  background-repeat: no-repeat;
   display: flex;
-  position: relative;
+  justify-content: center;
+}
+
+.selecter{
+  background-color: rgb(36, 34, 34);
+  height: 83%;
+  width: 940px;
+  margin-top:50px;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: 6px solid #666666;
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+
 }
 
 .clock{
-  position:absolute;
-  left:58%;
-  top:14%;
-  width: 20%;
+  text-align: right;
+  margin-right: 5px;
+  padding: 15px;
 }
 
 .clock-font{
@@ -63,16 +80,13 @@
 }
 
 .select-div{
-  position:absolute;
-	left:25%;
-  top: 23%;
-  width: 50%;
-  height: 50%;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 65px;
+  padding-right: 65px;
 }
 
-.select-li{
-  display: inline;
-}
+
 
 .select-ul{
   display: flex;
@@ -84,8 +98,8 @@
   display: inline;
   display: inline-block;
   background: #ffffff;
-  width: 149px;
-  height: 149px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   cursor: pointer;
   background-image: url(kotiku.png);
@@ -107,8 +121,8 @@
   display: inline;
   display: inline-block;
   background: #ffffff;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   cursor: pointer;
   background-image: url(nibanme.png);
@@ -133,8 +147,8 @@
   display: inline;
   display: inline-block;
   background: #ffffff;
-  width: 149px;
-  height: 149px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   cursor: pointer;
   background-image: url(hajimete.png);
@@ -157,8 +171,8 @@
   display: inline;
   display: inline-block;
   background: #ffffff;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   cursor: pointer;
   background-image: url(toiawase.png);
@@ -180,106 +194,97 @@
 
 .select-monster{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
+  height: 300px;
+  justify-content: space-between;
+  position:absolute;
+  text-align: center;
 }
 
-/* ========== ゲンガー画像 ========== */
+
+
+
+/* ========== ピクシー画像 ========== */
 .first-monster{
-  background-image: url(genga.png);
+  background-image: url(pp.png);
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 340px;
-  height: 350px;
-  position: absolute;
-  top: 43%;
-  left: 20%;
-  
+  margin: 0 50px 40px 60px;
+  width: 210px;
+  height: 210px;
 }
-/* ========== ゲンガー画像 ========== */
+/* ========== ピクシー画像 ========== */
 
 /* ========== リザードン画像 ========== */
 .second-monster{
-  background-image: url(rizardon.png);
+  background-image: url(riza.png);
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 50%;
-  left: 24%;
+  width: 210px;
+  height: 210px;
+  margin: 0 50px 40px 60px;
   display: none;
+  text-align: center;
 }
 /* ========== リザードン画像 ========== */
 
 
-/* ========== マリルリ画像 ========== */
+/* ========== ポッチャマ画像 ========== */
 .third-monster{
-  background-image: url(mariruri.png);
+  background-image: url(nansu.png);
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 220px;
-  height: 190px;
-  position: absolute;
-  top: 50%;
-  left: 24%;
+  width: 210px;
+  height: 210px;
+  margin: 0 50px 40px 60px;
+ 
   display: none;
 }
-/* ========== マリルリ画像 ========== */
+/* ========== ポッチャマ画像 ========== */
 
-/* ========== ロトム画像 ========== */
+/* ========== ジラーチ画像 ========== */
 .force-monster{
-  background-image: url(rotom.png);
+  background-image: url(jira.png);
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
   width: 200px;
   height: 200px;
-  position: absolute;
-  top: 51%;
-  left: 25%;
+  margin: 0 50px 40px 60px;
   display: none;
 }
-/* ========== ロトム画像 ========== */
+/* ========== ジラーチ画像 ========== */
 
-/* ========== ラッキー画像 ========== */
+/* ========== ヤドラン画像 ========== */
 .fifth-monster{
-  background-image: url(lukky.png);
+  background-image: url(ydoran.png);
   background-size: contain ;
   background-repeat: no-repeat;
   background-color: transparent;
-  width: 230px;
-  height: 160px;
-  position: absolute;
-  top: 55%;
-  left: 26%;
+  width: 200px;
+  height: 200px;
+  margin: 0 50px 40px 60px;
+
   display: none;
 }
-/* ========== ラッキー画像 ========== */
+/* ========== ヤドラン画像 ========== */
 
 
 
-/* ========== ゲンガー文 ========== */
+/* ========== ピクシー文 ========== */
 .first-message-box{
-  position: absolute;
-  top: 61%;
-  left:40%;
-  width: 36%;
-  height: 17%;
+  text-align: left;
+  width: 500px;
+  height: 100px;
   border-radius: 10px;
-  background-image: url(frame.png);
-  background-size: contain ;
-  background-repeat: no-repeat;
-  background-color: transparent;
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #232323;
-  background: #e9bde5;
-  border-left: solid 20px #913e7f;
+  background: #f8a5f1;
+  border-left: solid 20px #db51bd;
   margin: 0; 
   padding: 0;
   font-size: 23px;
@@ -289,7 +294,7 @@
 .first-message{
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-/* ========== ゲンガー文 ========== */
+/* ========== ピクシー文 ========== */
 
 
 /* ========== 書体読み込み ========== */
@@ -298,16 +303,10 @@
 
 /* ========== リザードン文 ========== */
 .second-message-box{
-  position: absolute;
-  top: 61%;
-  left:40%;
-  width: 36%;
-  height: 17%;
+  text-align: left;
+  width: 550px;
+  height: 100px;
   border-radius: 10px;
-  background-image: url(frame.png);
-  background-size: contain ;
-  background-repeat: no-repeat;
-  background-color: transparent;
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #232323;
@@ -324,18 +323,12 @@
 }
 /* ========== リザードン文 ========== */
 
-/* ========== マリルリ文 ========== */
+/* ========== ポッチャマ文 ========== */
 .third-message-box{
-  position: absolute;
-  top: 61%;
-  left:40%;
-  width: 36%;
-  height: 17%;
+  text-align: left;
+  width: 550px;
+  height: 100px;
   border-radius: 10px;
-  background-image: url(frame.png);
-  background-size: contain ;
-  background-repeat: no-repeat;
-  background-color: transparent;
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #232323;
@@ -349,20 +342,14 @@
 .third-message{
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-/* ========== マリルリ文 ========== */
+/* ========== ポッチャマ文 ========== */
 
-/* ========== ロトム文 ========== */
+/* ========== ジラーチ文 ========== */
 .force-message-box{
-  position: absolute;
-  top: 61%;
-  left:40%;
-  width: 36%;
-  height: 17%;
+  text-align: left;
+  width: 550px;
+  height: 100px;
   border-radius: 10px;
-  background-image: url(frame.png);
-  background-size: contain ;
-  background-repeat: no-repeat;
-  background-color: transparent;
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #232323;
@@ -376,25 +363,19 @@
 .force-message{
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-/* ========== ロトム文 ========== */
+/* ========== ジラーチ文 ========== */
 
-/* ========== ラッキー文 ========== */
+/* ========== ヤドラン文 ========== */
 .fifth-message-box{
-  position: absolute;
-  top: 61%;
-  left:40%;
-  width: 36%;
-  height: 17%;
+  text-align: left;
+  width: 550px;
+  height: 100px;
   border-radius: 10px;
-  background-image: url(frame.png);
-  background-size: contain ;
-  background-repeat: no-repeat;
-  background-color: transparent;
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #232323;
-  background: #ffaae6;
-  border-left: solid 20px #ec44d0;
+  background: #e5b3e5;
+  border-left: solid 20px #a74daa;
   margin: 0; 
   padding: 0;
   font-size: 23px;
@@ -403,20 +384,21 @@
 .fifth-message{
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-/* ========== ラッキー文 ========== */
+/* ========== ヤドラン文 ========== */
 
 .notice-body{
-  width: 70vh;
+  width: 590px;
   height: 80vh;
   background-color: #ffffff;
   margin: 0 auto;
   margin-bottom: 50px;
   overflow: scroll;
   border-radius: 10px 10px 0 0;
+  margin-top: 95px;
 }
 
 .notice-title{
-  width: 100%;
+  width: 590px;
   height:50px;
   text-align: center;
   font-weight: 1000;
@@ -431,7 +413,7 @@
 }
 
 .notice-area{
-  width: 100%;
+  width: 590;
   max-height: 200px;
   background-color:#e3ebee;
   border: 2px dotted #333233;
@@ -471,7 +453,7 @@
 .info-new{
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 60px;
+  margin-top: 5px;
 }
 
 .info-new-btn:hover{
@@ -488,6 +470,35 @@
 #notice-delete{
   display: none;
 }
+
+.notice-big{
+  max-width: 1500px;
+}
+
+.infomation-third-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice{
+  margin-right: 50px;
+}
+
+.tweet{
+  margin-left: 20px;
+}
+
+.tweet-intr{
+  width: 400px;
+  background-color: #7ecff1;
+  color: #ffff;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 22px;
+  border-radius: 10px 10px 0 0 ;
+}
+
+
 
 
 
@@ -618,8 +629,9 @@ left:0;
 z-index: 1;
 }
 /* ========== モーダルウィンドウ ========== */
-
-
+.info-seacret{
+  display: none;
+}
 
 /* ========== index ========== */
 
@@ -631,8 +643,9 @@ z-index: 1;
 
 .fresh-main-body{
 
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+  min-width: 700px;
 }
 
 .fresh-second-body{
@@ -641,8 +654,8 @@ z-index: 1;
   background-color: transparent;
   background-color:rgba(255,255,255,0.8);
   background-blend-mode:lighten;
-  width: 800px;
-  height: 100%;
+  max-width: 800px;
+  height: 100vh;
   margin: 0 auto;
   background-repeat: no-repeat;
 

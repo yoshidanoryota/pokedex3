@@ -1,10 +1,13 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit]
   before_action :article_find, only: [:update, :show, :edit]
+  
 
   def index
     @articles = Article.all.order(created_at: "DESC") .limit(20)
+    @rank = Article.order(impressions_count: 'DESC').limit(5)
 
+    
   end
 
   def new
@@ -42,6 +45,7 @@ class ArticlesController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @article.comments.all
+    impressionist(@article, nil, unique: [:ip_address])
   end
 
   def all
