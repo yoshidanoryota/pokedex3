@@ -7,6 +7,12 @@ class ArticlesController < ApplicationController
     @articles = Article.all.order(created_at: "DESC") .limit(20)
     @rank = Article.order(impressions_count: 'DESC').limit(5)
 
+    @pokerank1 = @rank.sample
+    @pokerank2 = @rank.sample
+    @pokerank3 = @rank.sample
+    @pokerank4 = @rank.sample
+    @pokerank5 = @rank.sample
+    @pokerank6 = @rank.sample
     
   end
 

@@ -20,7 +20,7 @@
   border-radius: 10px;
   margin-left: auto;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   display: inline-block;
 }
@@ -38,14 +38,14 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
-  margin-top: 15px;
+  margin-top: 25px;
   min-width: 1250px;
 
 }
 
 .ranking{
-  width: 300px;
-  height: 550px;
+  width: 400px;
+  height: 829px;
   background-color: #ffff;
   border-radius: 10px;
   border:4px solid rgb(61, 79, 238);
@@ -54,27 +54,54 @@
 }
 
 .ranking-field{
-  height: 10%;
+  height: 130px;
   background-color:rgb(252, 222, 243) ;
-  text-align: center;
-  display: inline-flex;
   width: 100%;
-  justify-content: center;
   border-bottom: 2px dotted rgb(155, 155, 161);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ranking-small{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .ranking-text{
-  display: block;
-  margin-top: 15px;
   font-weight: bolder;
   font-family:inherit;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+
+}
+
+.small-link{
+  color: blue;
+  font-size: 14px;
+  font-weight: bold;
+  line-height:10px;
+  text-align: center;
+}
+
+.small-link:hover{
+  color: rgb(100, 190, 235);
+}
+
+.ranking-small-text{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 0;
+  text-align: center;
+  
 }
 
 .new-article{
   width: 530px;
-  height: 650px;
+  height: 829px;
   background-color: rgb(224, 237, 247);
   margin: 0 50px 0 50px;
   border-radius: 10px;
@@ -85,7 +112,7 @@
 
 .scroll{
   overflow: scroll;
-  height: 600px;
+  height: 779px;
   border-radius: 10px;
 }
 
@@ -239,7 +266,7 @@
 .article-new-main{
   width: 100%;
   background-color: rgb(240, 245, 247);
-  border:4px solid rgb(61, 79, 238);
+  border:2px solid rgb(61, 79, 238);
   border-radius: 10px;
   margin: 0 auto;
   height: 370vh;
@@ -266,7 +293,7 @@
   width: 500px;
   margin-left: 30px;
   border-radius: 10px;
-  border:4px solid rgb(61, 79, 238);
+  border:2px solid rgb(61, 79, 238);
   background-color: rgb(230, 244, 247);
 }
 
@@ -400,7 +427,7 @@
   text-align: center;
   margin-top: 50px;
   border-radius: 10px;
-  border:4px solid rgb(61, 79, 238);
+  border:2px solid rgb(61, 79, 238);
   box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
   background-image: url(mokuro.jpeg);
   background-size:cover ;
@@ -437,14 +464,20 @@
 
 .show-monster-alone{
   width: 400px;
+  height: 300px;
   text-align: center;
   border-radius: 10px;
-  border:3px solid rgb(61, 79, 238);
+  border:2px solid rgb(61, 79, 238);
   background-image: url(border.jpeg);
   margin: 10px;
   box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
 }
 
+.show-date{
+  text-align: left;
+  margin: 10px;
+  font-weight: lighter;
+}
 
 
 .show-weapon-area{
@@ -543,6 +576,11 @@
 }
 
 .comment-delete{
+  text-align: right;
+  font-size: 14px;
+}
+
+.comment-date{
   text-align: right;
   font-size: 14px;
 }

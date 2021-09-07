@@ -1,5 +1,5 @@
 <div class="article-new-body">
-  <h1 class="article-new-title"><span class="ball-image party-ball"></span>構築投稿<span class="ball-image party-ball"></span></h1>
+  <h1 class="article-new-title"><span class="ball-image party-ball"></span>構築記事投稿<span class="ball-image party-ball"></span></h1>
   <div class="article-new-main">
     
        <div class="article-lecture">
@@ -50,7 +50,7 @@
     <%= form_with model: @article, class: 'form', local: true do |f| %>
 
       <div class="party-title">
-        <span class="party-title-text">構築名 </span><%= f.text_area :title, class:"title-field", id:"title-field", placeholder:"構築の名前を入力", maxlength:"40" %>
+        <span class="party-title-text">記事名 </span><%= f.text_area :title, class:"title-field", id:"title-field", placeholder:"構築の名前を入力", maxlength:"40" %>
       </div>
 
 

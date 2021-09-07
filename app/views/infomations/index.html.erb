@@ -9,6 +9,8 @@
   </div>
   </div>
 
+
+
   <div class="infomation-second-body">
     <div class="select">
       <div class="selecter">
@@ -88,7 +90,25 @@
               </p>
             </div>
          </div>   
-        </div>  
+        </div>
+        <div class="select-second"><%#-------------------------------------------------------------------- %>
+          <div class="right-intr">
+            <div class="right-intr-body"></div>
+          </div>
+          
+          <div class="select-search">
+            <%= form_with(url: search_articles_path, local: true, method: :get, class: "search-index") do |form| %>
+            <%= form.text_field :keyword, placeholder: "ポケモン名で検索", class: "search-text" %>
+            <%= form.submit "検索", class: "search-btn" %>
+            <% end %>
+          </div>
+          <div>
+          <%= render partial: "calendar" %>
+
+          </div>
+        
+        
+        </div >  <%#-------------------------------------------------------------------- %>  
       </div>
 
     </div> 
@@ -153,8 +173,8 @@
 
   <div class="tweet">
     <div class="tweet-intr">Twitter</div>
-  <a class="twitter-timeline" href="https://twitter.com/mhV4b7Q4f32EPxL?ref_src=twsrc%5Etfw" width="400px" height="600px"></a> 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" href="https://twitter.com/mhV4b7Q4f32EPxL?ref_src=twsrc%5Etfw" width="400px" height="600px"></a> 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 
 </div>
