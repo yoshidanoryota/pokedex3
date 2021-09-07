@@ -17,6 +17,7 @@ class Article < ApplicationRecord
   end
 
 
+  
   with_options presence: true do
     validates :title,
     :first_pokemon_hp,
