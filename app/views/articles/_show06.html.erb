@@ -1,0 +1,31 @@
+<div class="show-monster-alone">
+
+        <div class="show-monster-top">
+          <%= render partial: "monster006", locals: { article: @article } %>
+          <div class="show-pokemon-name"><%= @article.sixth_pokemon %></div>
+        </div>
+
+        <div class="show-monster-center">
+          <div class="show-monster-text">特性：<%= @article.sixth_pokemon_special %></div>
+          <div class="show-monster-text">持ち物：<%= @article.sixth_pokemon_item %></div>
+          <div class="show-monster-text">性格：<%= @article.sixth_pokemon_temper_id %></div>
+          <div class="show-monster-text">
+          <%= @article.sixth_pokemon_hp %>-<%= @article.sixth_pokemon_attack %>-<%= @article.sixth_pokemon_defence %>-
+          <%= @article.sixth_pokemon_spattack %>-<%= @article.sixth_pokemon_spdefence %>-<%= @article.sixth_pokemon_speed %>
+        </div>
+
+        <div class="show-weapon-area">
+          
+            <span class="show-monster-weapon"><%= @article.sixth_pokemon_first_weapon %></span>
+            <span class="show-monster-weapon"><%= @article.sixth_pokemon_second_weapon %></span>
+          
+        </div>  
+
+        <div class="show-weapon-area">
+          <div>
+            <span class="show-monster-weapon"><%= @article.sixth_pokemon_third_weapon %></span>
+            <span class="show-monster-weapon"><%= @article.sixth_pokemon_force_weapon %></span>
+          </div>  
+        </div>        
+    </div>  
+    </div>

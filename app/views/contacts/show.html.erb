@@ -1,0 +1,38 @@
+<div class="contact-show-body">
+  <div class="contact-show-second">
+    <div class="contact-title">
+      <h1>お問い合わせ内容</h1>
+   </div>
+    <div class="contact-form">
+        <div class='form-contents'>
+          <div class="form-text">お名前</div>
+          <div class="contact-show-name"><%= @contact.last_name%>　<%= @contact.first_name%></div>
+          
+        </div>
+
+        <div class='form-contents'>
+          <div class="form-text">メールアドレス</div>
+          <div class="contact-show-name"><%= @contact.email%></div>
+          
+        </div>
+
+        <div class='form-contents'>
+          <div class="form-text">お問い合わせの概要</div>
+          <div class="contact-show-name"><%= @contact.about%></div>
+          
+        </div>
+
+        <div class='form-contents'>
+          <div class="form-text">お問い合わせの詳細</div>
+          <div class="contact-show-sentence"><%= @contact.case%></div>
+        </div>
+
+        <div class="contact-time">
+          <%= @contact.created_at.strftime("[%Y年%m月%d日 %H:%M]")%>
+        </div>
+      </div>
+
+
+    
+  </div>
+</div>

@@ -1,0 +1,178 @@
+/* ========== index ========== */
+
+.character-main{
+  height: 335vh;
+  width: 800px;
+  background-image: url(mokuro.jpeg);
+  background-size: contain ;
+  background-color: transparent;
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
+  margin: 0 auto;
+}
+
+.character-h1{
+font-family: 'M PLUS Rounded 1c', sans-serif;
+text-align: center;
+padding-top: 30px;
+margin-bottom: 30px;
+}
+
+.character{
+  width: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.character-name{
+font-size: 15px;
+border-bottom: 1px dotted black;
+}
+
+.character-pic{
+  margin-left: 20px;
+}
+
+
+
+.character-name:hover{
+  opacity: 0.6;
+}
+
+.character-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== index ========== */
+
+
+/* ========== 個別データ ========== */
+.zukan-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-nnnn{
+  background-image: url(nnnn.png);
+  background-size: contain ;
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+
+
+.sub-p{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.sub-h1{
+  background-color: rgb(61, 79, 238);
+  border:4px solid rgb(61, 79, 238);
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+
+.zukan-body{
+  width: 800px;
+  height: 650px;
+  background-color: rgb(228, 247, 255);
+  margin-top: 50px;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.zukan-second{
+  display: flex;
+}
+
+.zukan-pokemon-field{
+  margin-left: 80px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.zukan-monster{
+  width: 160px;
+  height: 160px;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 2px solid black;
+  background-color: #ffff;
+}
+
+
+.zukan-name{
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.zukan-field{
+  margin-top: 40px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+}
+
+.kind{
+  margin-top: 30px;
+  font-size: 22px;
+  border-bottom: 2px solid black;
+}
+
+.type{
+margin-top: 20px;
+font-size: 22px;
+border-bottom: 2px solid black;
+}
+
+.special{
+  margin-top: 20px;
+  font-size: 22px;
+  border-bottom: 2px solid black;
+}
+
+.bold{
+  font-weight: bold;
+}
+.zukan-show{
+  font-size: 26px;
+  margin-top: 60px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.zikan-intr{
+  width: 650px;
+  height: 200px;
+  border: 2px solid black;
+  margin-top: 25px;
+  margin-left: 70px;
+  font-size: 27px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  background-color: #ffff;
+}
+
+
+/* ========== 個別データ ========== */

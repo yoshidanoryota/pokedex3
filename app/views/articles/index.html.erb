@@ -1,0 +1,343 @@
+<%= render "layouts/header"%>
+
+
+<div class="w-btn">
+
+  <div class="article-index">
+    <div class="action-btn">
+      <%=link_to '構築を投稿する', new_article_path,class: 'action-text' %>
+    </div>
+    <div class="action-btn">
+       <%=link_to '構築を検索する', search_articles_path,class: 'action-text' %>
+    </div>
+  </div>
+    
+</div>
+
+  <div class="article-second">
+  
+    <div class="ranking">
+    <h1 class="blue-title">ー注目のポケモンー</h1>
+
+
+      <%#----------------------------------------------------------------%>
+      <div class="ranking-field">
+
+        <div class="rank-mon">
+        <div class="ranking-text"><%=@pokerank1.first_pokemon %></div>
+        <%= render partial: "01indexmonseter", locals: { article: @pokerank1 } %>
+        </div>
+
+        <div class="ranking-small">
+          <p class="ranking-small-text">
+          <%=@pokerank1.first_pokemon_special %>/
+          <%=@pokerank1.first_pokemon_item %>/
+          <%=@pokerank1.first_pokemon_temper_id %></p><br>
+
+          <p class="ranking-small-text">
+          <%=@pokerank1.first_pokemon_hp %>-
+          <%=@pokerank1.first_pokemon_attack %>-
+          <%=@pokerank1.first_pokemon_defence %>-
+          <%=@pokerank1.first_pokemon_spattack %>-
+          <%=@pokerank1.first_pokemon_spdefence %>-
+          <%=@pokerank1.first_pokemon_speed %></p><br>
+          
+          <p class="ranking-small-text">
+          <%=@pokerank1.first_pokemon_first_weapon %>/
+          <%=@pokerank1.first_pokemon_second_weapon %>/
+          <%=@pokerank1.first_pokemon_third_weapon %>/
+          <%=@pokerank1.first_pokemon_force_weapon %>
+          </p><br>
+
+          <%=link_to "このポケモンの記事を見にいく", article_path(@pokerank1.id), class:'small-link' %>
+
+
+        </div>
+
+
+
+      </div>
+      <%#----------------------------------------------------------------%>
+
+      <%#----------------------------------------------------------------%>
+
+      <div class="ranking-field">
+
+        <div class="rank-mon">
+        <div class="ranking-text"><%=@pokerank2.force_pokemon %></div>
+        <%= render partial: "04indexmonster", locals: { article: @pokerank2 } %>
+        </div>
+
+        <div class="ranking-small">
+          <p class="ranking-small-text">
+          <%=@pokerank2.force_pokemon_special %>/
+          <%=@pokerank2.force_pokemon_item %>/
+          <%=@pokerank2.force_pokemon_temper_id %></p><br>
+
+          <p class="ranking-small-text">
+          <%=@pokerank2.force_pokemon_hp %>-
+          <%=@pokerank2.force_pokemon_attack %>-
+          <%=@pokerank2.force_pokemon_defence %>-
+          <%=@pokerank2.force_pokemon_spattack %>-
+          <%=@pokerank2.force_pokemon_spdefence %>-
+          <%=@pokerank2.force_pokemon_speed %></p><br>
+          
+          <p class="ranking-small-text">
+          <%=@pokerank2.force_pokemon_first_weapon %>/
+          <%=@pokerank2.force_pokemon_second_weapon %>/
+          <%=@pokerank2.force_pokemon_third_weapon %>/
+          <%=@pokerank2.force_pokemon_force_weapon %>
+          </p><br>
+
+          <%=link_to "このポケモンの記事を見にいく", article_path(@pokerank2.id), class:'small-link' %>
+
+
+        </div>
+
+      </div>
+
+
+      <div class="ranking-field">
+      
+        <div class="rank-mon">
+        <div class="ranking-text"><%=@pokerank3.second_pokemon %></div>
+        <%= render partial: "02indexmonster", locals: { article: @pokerank3 } %>
+        </div>
+
+        <div class="ranking-small">
+          <p class="ranking-small-text">
+          <%=@pokerank3.second_pokemon_special %>/
+          <%=@pokerank3.second_pokemon_item %>/
+          <%=@pokerank3.second_pokemon_temper_id %></p><br>
+
+          <p class="ranking-small-text">
+          <%=@pokerank3.second_pokemon_hp %>-
+          <%=@pokerank3.second_pokemon_attack %>-
+          <%=@pokerank3.second_pokemon_defence %>-
+          <%=@pokerank3.second_pokemon_spattack %>-
+          <%=@pokerank3.second_pokemon_spdefence %>-
+          <%=@pokerank3.second_pokemon_speed %></p><br>
+          
+          <p class="ranking-small-text">
+          <%=@pokerank3.second_pokemon_first_weapon %>/
+          <%=@pokerank3.second_pokemon_second_weapon %>/
+          <%=@pokerank3.second_pokemon_third_weapon %>/
+          <%=@pokerank3.second_pokemon_force_weapon %>
+          </p><br>
+
+          <%=link_to "このポケモンの記事を見にいく", article_path(@pokerank3.id), class:'small-link' %>
+
+
+        </div>
+
+      </div>
+
+      <%#----------------------------------------------------------------%>
+
+      <%#----------------------------------------------------------------%>
+
+      <div class="ranking-field">
+
+        <div class="rank-mon">
+        <div class="ranking-text"><%=@pokerank4.sixth_pokemon %></div>
+        <%= render partial: "06indexmonster", locals: { article: @pokerank4 } %>
+        </div>
+
+        <div class="ranking-small">
+          <p class="ranking-small-text">
+          <%=@pokerank4.sixth_pokemon_special %>/
+          <%=@pokerank4.sixth_pokemon_item %>/
+          <%=@pokerank4.sixth_pokemon_temper_id %></p><br>
+
+          <p class="ranking-small-text">
+          <%=@pokerank4.sixth_pokemon_hp %>-
+          <%=@pokerank4.sixth_pokemon_attack %>-
+          <%=@pokerank4.sixth_pokemon_defence %>-
+          <%=@pokerank4.sixth_pokemon_spattack %>-
+          <%=@pokerank4.sixth_pokemon_spdefence %>-
+          <%=@pokerank4.sixth_pokemon_speed %></p><br>
+          
+          <p class="ranking-small-text">
+          <%=@pokerank4.sixth_pokemon_first_weapon %>/
+          <%=@pokerank4.sixth_pokemon_second_weapon %>/
+          <%=@pokerank4.sixth_pokemon_third_weapon %>/
+          <%=@pokerank4.sixth_pokemon_force_weapon %>
+          </p><br>
+
+          <%=link_to "このポケモンの記事を見にいく", article_path(@pokerank4.id), class:'small-link' %>
+
+
+        </div>
+
+      
+      </div>
+
+       <%#----------------------------------------------------------------%>
+
+      <div class="ranking-field">
+
+      <div class="rank-mon">
+        <div class="ranking-text"><%=@pokerank5.fifth_pokemon %></div>
+        <%= render partial: "05indexmonster", locals: { article: @pokerank5 } %>
+        </div>
+
+      <div class="ranking-small">
+          <p class="ranking-small-text">
+          <%=@pokerank5.fifth_pokemon_special %>/
+          <%=@pokerank5.fifth_pokemon_item %>/
+          <%=@pokerank5.fifth_pokemon_temper_id %></p><br>
+
+          <p class="ranking-small-text">
+          <%=@pokerank5.fifth_pokemon_hp %>-
+          <%=@pokerank5.fifth_pokemon_attack %>-
+          <%=@pokerank5.fifth_pokemon_defence %>-
+          <%=@pokerank5.fifth_pokemon_spattack %>-
+          <%=@pokerank5.fifth_pokemon_spdefence %>-
+          <%=@pokerank5.fifth_pokemon_speed %></p><br>
+          
+          <p class="ranking-small-text">
+          <%=@pokerank5.fifth_pokemon_first_weapon %>/
+          <%=@pokerank5.fifth_pokemon_second_weapon %>/
+          <%=@pokerank5.fifth_pokemon_third_weapon %>/
+          <%=@pokerank5.fifth_pokemon_force_weapon %>
+          </p><br>
+
+          <%=link_to "このポケモンの記事を見にいく", article_path(@pokerank5.id), class:'small-link' %>
+
+
+        </div>
+      
+      </div>
+
+     
+
+      <%#----------------------------------------------------------------%>
+
+      <div class="ranking-field">
+      
+      <div class="rank-mon">
+        <div class="ranking-text"><%=@pokerank6.third_pokemon %></div>
+        <%= render partial: "03indexmonster", locals: { article: @pokerank6 } %>
+        </div>
+
+      <div class="ranking-small">
+          <p class="ranking-small-text">
+          <%=@pokerank6.third_pokemon_special %>/
+          <%=@pokerank6.third_pokemon_item %>/
+          <%=@pokerank6.third_pokemon_temper_id %></p><br>
+
+          <p class="ranking-small-text">
+          <%=@pokerank6.third_pokemon_hp %>-
+          <%=@pokerank6.third_pokemon_attack %>-
+          <%=@pokerank6.third_pokemon_defence %>-
+          <%=@pokerank6.third_pokemon_spattack %>-
+          <%=@pokerank6.third_pokemon_spdefence %>-
+          <%=@pokerank6.third_pokemon_speed %></p><br>
+          
+          <p class="ranking-small-text">
+          <%=@pokerank6.third_pokemon_first_weapon %>/
+          <%=@pokerank6.third_pokemon_second_weapon %>/
+          <%=@pokerank6.third_pokemon_third_weapon %>/
+          <%=@pokerank6.third_pokemon_force_weapon %>
+          </p><br>
+
+          <%=link_to "このポケモンの記事を見にいく", article_path(@pokerank6.id), class:'small-link' %>
+
+
+        </div>
+      
+      </div>
+
+
+
+ 
+
+    </div>
+
+    <%#----------------------------------------------------------------%>
+
+
+
+    <div class="new-article">
+    
+      
+        <h1 class="blue-title">ー新着記事ー
+        </h1>
+        <div class="scroll">
+
+          <% @articles.each do |article| %>
+          
+            <div class="new-article-link">
+              <div class="new-article-info">
+                投稿者：<span class="new-article-user"></span><%= link_to "#{article.user.name}", user_path(article.user_id), class:'new-article-user' %>
+                 <div class="all-day"><%= article.created_at.strftime("%Y年%m月%d日")%></div>
+              </div>
+              <%= link_to "#{article.title}", article_path(article.id), class:'new-article-title' %>
+
+              <div class="monster-choice">
+                <%= render partial: "monster01", locals: { article: article } %>
+                <%= render partial: "monster02", locals: { article: article } %>
+                <%= render partial: "monster03", locals: { article: article } %>
+                <%= render partial: "monster04", locals: { article: article } %>
+                <%= render partial: "monster05", locals: { article: article } %>
+                <%= render partial: "monster06", locals: { article: article } %>
+              </div>
+
+            
+            </div>
+        
+
+          <%end%>  
+          <div class="old-title-article">記事の一覧は<%= link_to "こちら", search_articles_path, class:'old-article-title' %></div>
+        </div>  
+
+    
+
+
+    </div>
+
+    
+
+    <div class="old-article">
+      <h1 class="blue-title">ー注目記事ー</h1>
+        
+        <div class="rank-field">
+          
+          <% @rank.each do |rank| %>
+
+          <div class="rank-article"><span class="pika"></span>><%= link_to "#{rank.title}", article_path(rank.id), class:'rank-article-title' %></div>
+          <%end%>
+        </div>
+        <div class="old-field">
+          
+
+          <div class="old-article-link">
+            <div class="old-title-article">過去の記事一覧は<%= link_to "こちら", search_articles_path, class:'old-article-title' %></div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+
+
+</div> 
+
+<footer>
+      <div class="wrapper footer__wrapper ">
+        <h1 class="footer-message">当サイトのイラスト画像等は全て使用許可を得ております</h1>
+      </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+

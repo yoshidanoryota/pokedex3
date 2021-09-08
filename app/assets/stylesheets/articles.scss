@@ -1,0 +1,783 @@
+/* ========== index ========== */
+
+
+.w-btn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
+
+.action-btn{
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  color: #ffff;
+  background-color: rgb(61, 79, 238);
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.action-btn:hover{
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+}
+
+.action-text{
+  color: #ffff;
+}
+
+.article-second{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 25px;
+  min-width: 1250px;
+
+}
+
+.ranking{
+  width: 420px;
+  height: 1009px;
+  background-color: #ffff;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  
+}
+
+.ranking-field{
+  height: 160px;
+  background-color:rgb(252, 222, 243) ;
+  width: 100%;
+  border-bottom: 2px dotted rgb(155, 155, 161);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ranking-small{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.ranking-text{
+  font-weight: bolder;
+  font-family:inherit;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 18px;
+  align-items: center;
+  display: inline-block;
+}
+
+.small-link{
+  color: blue;
+  font-size: 15px;
+  font-weight: bold;
+  line-height:14px;
+  text-align: center;
+}
+
+.small-link:hover{
+  color: rgb(100, 190, 235);
+}
+
+.ranking-small-text{
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 0;
+  text-align: center;
+}
+
+.rank-mon{
+  display: flex;
+  align-items: center;
+
+}
+
+.rank-monster{
+  
+  width: 20px;
+  height: 20px;
+  text-align: left;
+}
+
+.new-article{
+  width: 530px;
+  height: 1009px;
+  background-color: rgb(224, 237, 247);
+  margin: 0 50px 0 50px;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+ 
+}
+
+.scroll{
+  overflow: scroll;
+  height: 960px;
+  border-radius: 10px;
+}
+
+
+
+.new-article-link{
+  border-bottom: 2px dotted rgb(116, 116, 117);
+  height: 117px;
+  background-color: rgb(224, 237, 247);
+  padding: 0 10px 0 5px;
+
+}
+
+
+.new-article-title{
+  cursor: pointer;
+  margin-left: 17px;
+  font-family:inherit;
+  font-size: 17px;
+  border-bottom: 1px solid black;
+  
+}
+
+.new-article-title:hover{
+  font-weight: bold;
+}
+
+.new-article-user{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 15px;
+}
+
+
+
+
+.new-article-info{
+  font-size: 16px;
+  margin-left: 5px;
+  font-weight:lighter;
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-article-user:hover{
+  color: rgb(53, 40, 231);
+}
+
+
+
+
+.old-article{
+  width: 350px;
+  height: 400px;
+  background-color: rgb(224, 247, 221);
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+}
+
+.blue-title{
+  background-color: rgb(61, 79, 238);
+  color: #ffff;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 4px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.old-article-title{
+  font-size: 22px;
+  color: rgb(61, 79, 238);
+  margin: 0 auto;
+  
+}
+
+.old-article-title:hover{
+  opacity: 0.7;
+}
+
+
+.old-title-article{
+  text-align: center;
+  font-size: 18px;
+  
+}
+
+.old-field{
+  margin-top: 5px;
+}
+
+.rank-field{
+  margin: 10px 0 10px 0;
+}
+
+.rank-article{
+  text-align: center;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  margin-top: 10px;
+  
+  
+}
+
+.rank-article-title{
+  font-family:inherit;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(143, 140, 140);
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-right: 2px;
+
+}
+
+.rank-article-title:hover{
+  font-weight: bold;
+}
+
+.pika{
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(pika.png);
+}
+
+
+
+/* ========== index ========== */
+
+
+/* ========== new ========== */
+.article-new-body{
+  width: 100vw;
+  height: 350vh;
+}
+
+.article-new-main{
+  width: 100%;
+  background-color: rgb(240, 245, 247);
+  border:2px solid rgb(61, 79, 238);
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 370vh;
+}
+
+.article-lecture{
+  padding-top: 30px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+
+.article-new-second{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.article-new-title{
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #ffff;
+  width: 500px;
+  margin-left: 30px;
+  border-radius: 10px;
+  border:2px solid rgb(61, 79, 238);
+  background-color: rgb(230, 244, 247);
+}
+
+.article-new-second{
+  width: 100vw;
+  height: 100vh;
+}
+
+.party-title{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 1200px;
+  height: 70px;
+  background-color: rgb(61, 79, 238);
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  
+}
+
+.party-title-text{
+  font-size: 27px;
+  display: block;
+  font-weight: bolder;
+  font-family:inherit;
+  line-height: 27px;
+  padding: 20px;
+  color: #ffff;
+  
+}
+
+
+
+.title-field{
+  width: 1000px;
+  font-size: 20px;
+  height: 35px;
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+.pokemon-list{
+  display: flex;
+  margin-top: 30px;
+}
+
+.party-monster{
+  background-color: rgb(230, 244, 247);
+  margin-left: 20px;
+  width: 430px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+}
+
+.party-monster-block{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 35px;
+}
+
+.party-monster-text{
+  display: block;
+  font-family:inherit;
+  width: 85px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.pokemon-name-field{
+  width: 250px;
+  font-size: 15px;
+  height: 30px;
+  padding-top: 2px;
+}
+
+.party-monster-number{
+  display: block;
+  font-family:inherit;
+  width: 58px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.pokemon-number-field{
+  width: 100px;
+  font-size: 15px;
+  height: 30px;
+  padding-top: 2px;
+}
+
+.party-text{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.article_text-field{
+  width: 700px;
+  height: 500px;
+  overflow: scroll;
+  font-size: 15px;
+}
+/* ========== new ========== */
+
+
+/* ========== show ========== */
+
+.article_path{
+  font-size: 19px;
+  color: rgb(56, 72, 218);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.article_path:hover{
+  opacity: 0.5;
+}
+
+.article-show-second{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  border:2px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  background-image: url(mokuro.jpeg);
+  background-size:cover ;
+  background-color: transparent;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+}
+
+.show-monster-title{
+  font-size: 33px;
+  margin-top: 68px;
+
+}
+
+.show-monster-user{
+  font-size: 20px;
+}
+
+.show-monster-user:hover{
+  color: rgb(63, 119, 202);
+}
+
+.show-monster-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.show-monster-body{
+  display: flex;
+}
+
+.show-monster-alone{
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  border-radius: 10px;
+  border:2px solid rgb(61, 79, 238);
+  background-image: url(border.jpeg);
+  margin: 10px;
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+}
+
+.show-date{
+  text-align: left;
+  margin: 10px;
+  font-weight: lighter;
+}
+
+
+.show-weapon-area{
+  margin-top: 5px;
+
+  
+}
+
+.show-monster-weapon{
+  margin-right: 5px;
+
+}
+
+.show-pokemon-name{
+  font-weight: bolder;
+  margin-bottom: 3px;
+}
+
+.show-text-area{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  
+}
+
+.article-show-text{
+  width: 650px;
+  background-image: url(borde.jpeg);
+  background-color: rgb(240, 243, 245);
+  margin: 0 auto;
+  font-size: 16px;
+  border:1px solid rgb(0, 0, 0);
+}
+
+.show-text{
+  text-align: left;
+  padding: 10px;
+}
+.comment-title{
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.comment-area{
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-height: 600px;
+  overflow: scroll;
+}
+
+.not-comment{
+  width: 600px;
+  background-color:#ffff;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+}
+
+.comment-text-area{
+  width: 100%;
+  border: 1px solid rgb(149, 149, 151);
+  margin: 5px 0 ;
+  border-radius: 10px;
+  background-color: rgb(192, 229, 247);
+  padding:10px
+}
+.comment-body{
+  text-align: left;
+}
+.comment-btn{
+  margin: 20px 0 40px 0 ;
+}
+
+.comment-new-btn{
+  width: 180px;
+  height: 40px;
+  background-color: rgb(0, 153, 255);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+
+.comment-new-btn:hover{
+  opacity: 0.7;
+}
+.comment-user:hover{
+  color: rgb(63, 119, 202);
+}
+
+.comment-delete{
+  text-align: right;
+  font-size: 14px;
+}
+
+.comment-date{
+  text-align: right;
+  font-size: 14px;
+}
+
+.comment-delete:hover{
+  color: rgb(63, 119, 202);
+}
+
+/* ========== show ========== */
+
+
+/* ========== edit ========== */
+
+.article-edit-main{
+  width: 100%;
+  background-color: rgb(240, 245, 247);
+  border:4px solid rgb(61, 79, 238);
+  border-radius: 10px;
+  height: 300vh;
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+}
+
+.edit-title{
+  margin: 20px 0 0 20px;
+}
+
+
+
+.edit-btn{
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffff;
+  background-color: rgb(61, 79, 238);
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.edit-btn:hover{
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+}
+
+.login-must{
+  margin-bottom: 30px;
+}
+
+.login-must-link{
+  color: rgb(87, 114, 238);
+  font-size: 18px;
+}
+
+/* ========== edit ========== */
+
+/* ========== search ========== */
+
+.search-body{
+  margin-top: 20px;
+}
+
+.search-title{
+font-family: 'M PLUS Rounded 1c', sans-serif;
+background-color: rgb(61, 79, 238);
+color: #ffff;
+font-size: 25px;
+text-align: center;
+width: 100%;
+
+}
+
+
+.search-second{
+  width: 800px;
+  background-color: #ffff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  min-height: 94vh;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  background-image: url(mokuro.jpeg);
+  background-size:cover ;
+  background-color: transparent;
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
+}
+
+.serch-article{
+  margin-bottom: 40px;
+}
+
+.search-form{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  
+}
+
+.search-input{
+  width: 250px;
+  height: 35px;
+  font-size: 19;
+  background-color: rgb(227, 244, 252);
+}
+
+.search-btn{
+  width: 50px;
+  height: 35px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.paginate-length{
+  text-align: center;
+}
+
+
+.serch-article-link{
+  border: 2px dotted rgb(116, 116, 117);
+  height: 121px;
+  background-color: rgb(224, 237, 247);
+  padding: 0 10px 0 5px;
+  width: 600px;
+  border:2px solid rgb(61, 79, 238);
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+}
+
+/* ========== search ========== */
+
+
+/* ========== all ========== */
+.all-title{
+  background-color: rgb(61, 79, 238);
+  color: #ffff;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.article-all-main{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.all-article{
+  margin-top: 20px;
+  width: 725px;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  min-height: 94vh;
+  border:4px solid rgb(61, 79, 238);
+  box-shadow: 0px 8px 8px 0px rgba(22, 21, 21, 0.5);
+  padding-bottom: 20px;
+  background-image: url(mokuro.jpeg);
+  background-size:cover ;
+  background-color: transparent;
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
+}
+
+.pagination>li>a {          
+  border: none;
+  color: #696969;
+  font-size: 20px;
+}
+
+.all-day{
+  margin-left: auto;
+  display: inline-block;
+}
+
+
+
+.paginate-field{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+ 
+}
+
+
+/* ========== all ========== */

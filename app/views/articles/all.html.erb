@@ -1,0 +1,36 @@
+<%= link_to "構築トップに戻る", articles_path, class:'article_path' %>
+<div class="article-all-main">
+
+  
+    <div class="all-article">
+    <h1 class="all-title">構築記事一覧</h1>
+      <% @articles.each do |article| %>
+      
+        <div class="serch-article-link">
+            <div class="new-article-info">
+                投稿者：<span class="new-article-user"></span><%= link_to "#{article.user.name}", user_path(article.user_id), class:'new-article-user' %>
+                <div class="all-day"><%= article.created_at.strftime("%Y年%m月%d日")%></div>
+            </div>
+          <%= link_to "#{article.title}", article_path(article.id), class:'new-article-title' %>
+
+          <div class="monster-choice">
+            <%= render partial: "monster01", locals: { article: article } %>
+            <%= render partial: "monster02", locals: { article: article } %>
+            <%= render partial: "monster03", locals: { article: article } %>
+            <%= render partial: "monster04", locals: { article: article } %>
+            <%= render partial: "monster05", locals: { article: article } %>
+            <%= render partial: "monster06", locals: { article: article } %>
+          </div>
+        </div>
+
+      
+      <%end%>
+      <div class="paginate-field">
+        <%= paginate @articles %>
+      </div>
+    </div>
+
+
+
+  
+</div>

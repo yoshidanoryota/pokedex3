@@ -9,7 +9,15 @@ require("@rails/activestorage").start()
 require("channels")
 require("../clock")
 require("../ball")
+require("../modal")
+require("../calendar")
+require("../tool")
+
 //require("../header")
+
+require ("jquery")
+
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

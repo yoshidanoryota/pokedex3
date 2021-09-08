@@ -1,0 +1,16 @@
+<div class="contact-index-body">
+  <div class="cntact-index-second">
+    <div class="contact-index-title">
+      <h1>お問い合わせ一覧</h1>
+   </div>
+    <div class="contact-all">
+      <% @contacts.each do |contact|%>
+        <% wd = ["日", "月", "火", "水", "木", "金", "土"]%>
+        <div class="contact-area">
+          ○ <%= link_to "#{contact.created_at.strftime("%Y年%m月%d日(#{wd[contact.created_at.wday]})　")}お問い合わせの概要:【#{contact.about}】", 
+              contact_path(contact), class: 'contact-link'%>
+        </div>
+      <% end %>
+    <div class="contact-all">
+
+<div>

@@ -1,0 +1,31 @@
+<div class="show-monster-alone">
+
+        <div class="show-monster-top">
+          <%= render partial: "monster004", locals: { article: @article } %>
+          <div class="show-pokemon-name"><%= @article.force_pokemon %></div>
+        </div>
+
+        <div class="show-monster-center">
+          <div class="show-monster-text">特性：<%= @article.force_pokemon_special %></div>
+          <div class="show-monster-text">持ち物：<%= @article.force_pokemon_item %></div>
+          <div class="show-monster-text">性格：<%= @article.force_pokemon_temper_id %></div>
+          <div class="show-monster-text">
+          <%= @article.force_pokemon_hp %>-<%= @article.force_pokemon_attack %>-<%= @article.force_pokemon_defence %>-
+          <%= @article.force_pokemon_spattack %>-<%= @article.force_pokemon_spdefence %>-<%= @article.force_pokemon_speed %>
+        </div>
+
+        <div class="show-weapon-area">
+          <div>
+            <span class="show-monster-weapon"><%= @article.force_pokemon_first_weapon %></span>
+            <span class="show-monster-weapon"><%= @article.force_pokemon_second_weapon %></span>
+          </div>
+        </div>  
+
+        <div class="show-weapon-area">
+          <div>
+            <span class="show-monster-weapon"><%= @article.force_pokemon_third_weapon %></span>
+            <span class="show-monster-weapon"><%= @article.force_pokemon_force_weapon %></span>
+          </div>  
+        </div>        
+      </div>
+      </div>

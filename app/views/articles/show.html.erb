@@ -1,0 +1,91 @@
+<%= link_to "構築トップに戻る", articles_path, class:'article_path' %>
+<div class="article-show-body">
+
+  <div class="article-show-second">
+
+    <h4 class="show-date"><%=@article.created_at.strftime("%Y年%m月%d日")%></h4>
+    <h1 class="show-monster-title"><%= @article.title %>
+    <%if user_signed_in? && current_user.id == @article.user_id%>
+      <span clas="edit-link"><%= link_to "編集する", edit_article_path(@article.id), class:'edit-btn' %></span>
+    <%end%>
+    
+    </h1><br>
+     <%= link_to "#{@article.user.name}", user_path(@article.user_id), class:'show-monster-user' %>
+    
+   
+
+    <div class="show-monster-main">
+
+      <div class="show-monster-body">
+
+        <%= render partial: "show01", locals: { article: @article } %>
+        <%= render partial: "show02", locals: { article: @article } %>
+        <%= render partial: "show03", locals: { article: @article } %>
+      </div>  
+
+      <div class="show-monster-body">
+        <%= render partial: "show04", locals: { article: @article } %>
+        <%= render partial: "show05", locals: { article: @article } %>
+        <%= render partial: "show06", locals: { article: @article } %>
+      </div>
+    <div>
+
+    <div class="show-text-area">
+      <div class="article-show-text">
+        <div class="show-text">
+          <%=safe_join(@article.article_text.split("\n"),tag(:br))%>
+        </div>  
+      </div>  
+    </div>
+
+    <h3 class="comment-title">コメント</h3>
+    <%  unless @comments.present? %>
+    <div>---------------------この記事にコメントはありません--------------------</div>
+    <%end%>
+    <div class="comment-area">
+      
+      <% @comments.each do |comment|%>
+      <div class="comment-text-area">
+      
+        <div class="comment-body">
+          <div class="comment-user"><%= link_to comment.user.name, user_path(comment.user_id), class:'comment-user'%></div>
+          <div class="comment-text"><%=safe_join(comment.comment_text.split("\n"),tag(:br))%></div>
+          <div class="comment-date"><%= comment.created_at.strftime("%Y年%m月%d日")%></div>
+          
+          <% if user_signed_in?  && comment.user_id == current_user.id%>
+          <div class="comment-delete"><%= link_to "投稿したコメントを削除する", "/articles/#{comment.article_id}/comments/#{comment.id}", method: :DELETE, class: 'comment-delete' %></div>
+          <%end%>
+        </div>
+      </div>
+       <%end%>  
+      
+    </div>
+
+    <%if user_signed_in? %>
+    <div class="comment-btn">
+      <button class="comment-new-btn" id="modal-open-comment" >この投稿にコメントする</button>  
+    </div>
+
+     <%else%>
+    <div class="login-must">コメントするには<%= link_to 'ログイン', new_user_session_path, class: 'login-must-link' %>が必要です</div>
+    <%end%>
+   
+
+  </div>
+</div>
+
+
+<%# モーダルウィンドウ  %>
+<div id="comment-new">
+  <%= form_with(model: [@article, @comment], local: true) do |f|%>
+  
+    <div class="info-text-form" id="info-text-form">
+      <%= f.text_area :comment_text, class: 'infomation-text-area', placeholder: '内容を入力してください' %>
+    </div>
+      
+    <div class="text-button" id="text-button">
+      <%= f.submit 'コメントする', class: 'text-submit' %>
+    </div>  
+  <% end %>
+</div>
+  <%# モーダルウィンドウ  %>

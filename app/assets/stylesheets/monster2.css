@@ -1,0 +1,27 @@
+
+.n0100{
+  background-image: url(0100.png);
+}
+
+.n0200{
+  background-image: url(0200.png);
+}
+
+.n0300{
+  background-image: url(0300.png);
+}
+
+.nnn{
+  background-image: url(nnn.png);
+}
+
+
+.monster-icon2{
+  width: 75px;
+  height: 70px;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+}
+

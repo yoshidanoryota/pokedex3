@@ -1,0 +1,23 @@
+<div class="user-page-main">
+  <div class="user-page">
+    <h2 class="user-page-title"><span class="ball-image user-ball"></span>ユーザーページ<span class="ball-image user-ball"></span></h2>
+    <div class="user-info">
+      <div class="user-name-field">
+        <span class="user-icon"></span>
+        <p class= "user-name"><%= @user.name %></p>
+      </div>  
+
+      <div class="user-article">
+        <h3 class="user-articles-title">投稿した構築一覧</h3>
+        <% @articles.each do |article| %>
+          <div class="user-articles">
+            <%= link_to "#{article.title}", article_path(article.id), class:'user-article-title' %>
+          </div>
+        <%end%>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+</div>

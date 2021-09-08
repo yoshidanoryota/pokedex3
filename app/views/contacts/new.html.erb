@@ -1,0 +1,66 @@
+<div class="contact-body">
+
+  <div class="contact-second-body">
+
+    <div class="contact-title">
+      <h1>お問い合わせ</h1>
+   </div>
+
+    <% if @contact.errors.any? %>
+      <div class="error-info">
+        入力に誤りがあります、内容を確認してください。
+      </div>
+    <% end %>
+
+    <div class="contact-sentence">
+      <p class="content-first-sentence">お問い合わせの際は、事前に下記「ご注意」をお読みくださいますようお願いいたします。<br />
+        
+      </p>
+
+      <p class="contact-small-title">注意</p>
+
+      <p class="content-second-sentence">
+        ○ご入力いただいたメールアドレスに返信をさせていただきますので、メールアドレスに誤りがないかをご確認ください。<br />
+        ○お問い合わせ内容によっては、返信までお時間をいただく場合があります。<br />
+        ○いただいた内容は全て確認しておりますが、ご連絡いただいた内容によりましては返信を差し控えさせていただく場合があります。
+        <br><br><br>
+        下記フォームに必要事項を入力し、送信してください。
+      </p>     
+    </div>
+
+    <%= form_with model: @contact, class: 'form', local: true do |f| %>
+      <div class="contact-form">
+
+        <div class='form-contents'>
+          <div class="form-text">お名前</div>
+          <%= f.text_area :last_name, class:"name-field", id:"lastname", placeholder:"性 ", maxlength:"40" %>
+          <%= f.text_area :first_name, class:"name-field", id:"firstname", placeholder:"名" , maxlength:"40" %>
+        </div>
+
+        <div class='form-contents'>
+          <div class="form-text">メールアドレス<span class="form-small-text"> (半角英数字記号)</span></div>
+          <%= f.email_field :email, class:"email-field", id:"email", placeholder:" 例) example@pokemon.com" %>
+        </div>
+
+        <div class='form-contents'>
+          <div class="form-text">お問い合わせの概要<span class="form-small-text"> (お問い合わせのおおまかな内容をご記入ください)</span></div>
+          <%= f.text_area :about, class:"about-field", id:"lastname", placeholder:" 例) 投稿時の不具合に関して", maxlength:"40" %>
+        </div>
+
+         <div class='form-contents'>
+          <div class="form-text">お問い合わせの詳細<span class="form-small-text"> (なるべく具体的にご記入ください)</span></div>
+          <%= f.text_area :case, class:"case-field", id:"lastname" %>
+        </div>
+      </div>
+    
+    <div class='contact-form-btn'>
+    <%= f.submit "上記の内容で送信する" ,class:"contact-form-submit" %>
+    </div>
+
+
+    <% end %>
+
+  </div>
+
+
+</div>

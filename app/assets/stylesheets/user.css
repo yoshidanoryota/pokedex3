@@ -1,4 +1,4 @@
-/* ========== 新規登録 ========== */
+/* ========== 新規登録・ログイン ========== */
 
 .user-form-body{
   margin-top: 40px;
@@ -56,7 +56,7 @@ form {
   background: #fafafa;
   border: none;
   border-bottom: 2px solid #e9e9e9;
-  color: #666;
+  color: rgb(17, 17, 17);
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   height: 50px;
@@ -130,4 +130,78 @@ form {
 
 
 
-/* ========== 新規登録 ========== */
+/* ========== 新規登録・ログイン ========== */
+
+
+
+/* ========== ユーザーページ ========== */
+
+.user-page{
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ffff;
+  text-align: center;
+  min-height: 600px;
+  border-radius: 10px;
+  border:4px solid rgb(61, 79, 238);
+  margin-top: 70px;
+  padding-bottom: 60px;
+  
+}
+
+.user-page-title{
+  margin-top: 35px;
+  margin-bottom:50px;
+  line-height: 35px;
+  font-size: 30px;
+}
+
+.user-ball{
+  margin-top: 10px;
+  display: inline-block;
+}
+
+
+.user-name-field{
+  display: flex;
+  justify-content: center;
+}
+
+.user-icon{
+  width: 80px;
+  height: 80px;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+  background-image: url(red.png);
+}
+
+.user-name{
+  line-height: 80px;
+  font-size: 25px;
+}
+
+.user-article{
+  margin-top: 45px;
+}
+
+.user-articles-title{
+  margin-bottom: 30px;
+}
+
+.user-article-title{
+  color: #2b7de7;
+  
+}
+
+.user-article-title:hover{
+  opacity: 0.6;
+}
+
+
+.user-articles{
+  margin-top: 15px;
+}
+
+/* ========== ユーザーページ ========== */

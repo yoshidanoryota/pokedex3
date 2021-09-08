@@ -1,0 +1,448 @@
+<div class="article-edit-main">
+
+  <h1 class="edit-title">編集画面</h1>
+  
+
+<% if @article.errors.any? %>
+      <div class="error-info">
+        入力に誤りがあります、内容を確認してください。
+      </div>
+      <% end %>
+  <div class="article-new-second">
+ 
+    <%= form_with model: @article, class: 'form', local: true do |f| %>
+
+      <div class="party-title">
+        <span class="party-title-text">構築名 </span><%= f.text_area :title, class:"title-field", id:"title-field", placeholder:"構築の名前を入力", maxlength:"40" %>
+      </div>
+
+
+    <div class="pokemon-list">
+    
+      
+      <%# -------------1匹目------------------%>
+      <div class="party-monster">
+        <div class="party-monster-block">
+          <span class="party-monster-text">ポケモン① </span>
+          <%= f.text_area :first_pokemon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの名前を入力 ", maxlength:"7" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">特性</span>
+        <%= f.text_area :first_pokemon_special, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの特性を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">持ち物</span>
+        <%= f.text_area :first_pokemon_item, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの持ち物を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">性格</span>
+        <%= f.text_area :first_pokemon_temper_id, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの性格を入力 ", maxlength:"7" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">HP</span>
+        <%= f.text_area :first_pokemon_hp, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"実数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">攻撃</span>
+        <%= f.text_area :first_pokemon_attack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"実数値を入力", maxlength:"3" %>
+        </div>
+
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">防御</span>
+        <%= f.text_area :first_pokemon_defence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"実数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">特攻</span>
+        <%= f.text_area :first_pokemon_spattack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"実数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">特防</span>
+        <%= f.text_area :first_pokemon_spdefence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"実数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">素早さ</span>
+        <%= f.text_area :first_pokemon_speed, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"実数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技①</span>
+        <%= f.text_area :first_pokemon_first_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技②</span>
+        <%= f.text_area :first_pokemon_second_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技③</span>
+        <%= f.text_area :first_pokemon_third_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技④</span>
+        <%= f.text_area :first_pokemon_force_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+      </div>
+      <%# -------------1匹目------------------%>
+
+      <%# -------------2匹目------------------%>
+      <div class="party-monster">
+        <div class="party-monster-block">
+        <span class="party-monster-text">ポケモン②</span>
+        <%= f.text_area :second_pokemon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの名前を入力 ", maxlength:"7" %>
+        </div>
+        <div class="party-monster-block">
+        <span class="party-monster-text">特性</span>
+        <%= f.text_area :second_pokemon_special, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの特性を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">持ち物</span>
+        <%= f.text_area :second_pokemon_item, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの持ち物を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">性格</span>
+        <%= f.text_area :second_pokemon_temper_id, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの性格を入力 ", maxlength:"7" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">HP</span>
+        <%= f.text_area :second_pokemon_hp, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">攻撃</span>
+        <%= f.text_area :second_pokemon_attack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">防御</span>
+        <%= f.text_area :second_pokemon_defence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+
+        <span class="party-monster-number">特攻</span>
+        <%= f.text_area :second_pokemon_spattack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+         <div class="party-monster-block">
+        <span class="party-monster-number">特防</span>
+        <%= f.text_area :second_pokemon_spdefence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">素早さ</span>
+        <%= f.text_area :second_pokemon_speed, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技①</span>
+        <%= f.text_area :second_pokemon_first_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技②</span>
+        <%= f.text_area :second_pokemon_second_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技③</span>
+        <%= f.text_area :second_pokemon_third_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技④</span>
+        <%= f.text_area :second_pokemon_force_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+      </div>
+      <%# -------------2匹目------------------%>
+
+      <%# -------------3匹目------------------%>
+      <div class="party-monster">
+        <div class="party-monster-block">
+        <span class="party-monster-text">ポケモン③</span>
+        <%= f.text_area :third_pokemon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの名前を入力 ", maxlength:"7" %>
+        </div>
+        <div class="party-monster-block">
+        <span class="party-monster-text">特性</span>
+        <%= f.text_area :third_pokemon_special, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの特性を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">持ち物</span>
+        <%= f.text_area :third_pokemon_item, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの持ち物を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">性格</span>
+        <%= f.text_area :third_pokemon_temper_id, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの性格を入力 ", maxlength:"7" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">HP</span>
+        <%= f.text_area :third_pokemon_hp, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">攻撃</span>
+        <%= f.text_area :third_pokemon_attack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">防御</span>
+        <%= f.text_area :third_pokemon_defence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+
+        <span class="party-monster-number">特攻</span>
+        <%= f.text_area :third_pokemon_spattack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+         <div class="party-monster-block">
+        <span class="party-monster-number">特防</span>
+        <%= f.text_area :third_pokemon_spdefence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">素早さ</span>
+        <%= f.text_area :third_pokemon_speed, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技①</span>
+        <%= f.text_area :third_pokemon_first_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技②</span>
+        <%= f.text_area :third_pokemon_second_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技③</span>
+        <%= f.text_area :third_pokemon_third_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技④</span>
+        <%= f.text_area :third_pokemon_force_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+      </div>
+      <%# -------------3匹目------------------%>
+    </div>
+
+    <div class="pokemon-list">    
+
+      <%# -------------4匹目------------------%>
+      <div class="party-monster">
+        <div class="party-monster-block">
+        <span class="party-monster-text">ポケモン④</span>
+        <%= f.text_area :force_pokemon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの名前を入力 ", maxlength:"7" %>
+        </div>
+        <div class="party-monster-block">
+        <span class="party-monster-text">特性</span>
+        <%= f.text_area :force_pokemon_special, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの特性を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">持ち物</span>
+        <%= f.text_area :force_pokemon_item, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの持ち物を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">性格</span>
+        <%= f.text_area :force_pokemon_temper_id, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの性格を入力 ", maxlength:"7" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">HP</span>
+        <%= f.text_area :force_pokemon_hp, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">攻撃</span>
+        <%= f.text_area :force_pokemon_attack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">防御</span>
+        <%= f.text_area :force_pokemon_defence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+
+        <span class="party-monster-number">特攻</span>
+        <%= f.text_area :force_pokemon_spattack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+         <div class="party-monster-block">
+        <span class="party-monster-number">特防</span>
+        <%= f.text_area :force_pokemon_spdefence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">素早さ</span>
+        <%= f.text_area :force_pokemon_speed, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技①</span>
+        <%= f.text_area :force_pokemon_first_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技②</span>
+        <%= f.text_area :force_pokemon_second_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技③</span>
+        <%= f.text_area :force_pokemon_third_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技④</span>
+        <%= f.text_area :force_pokemon_force_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+      </div>
+      <%# -------------4匹目------------------%>
+
+      <%# -------------5匹目------------------%>
+     <div class="party-monster">
+        <div class="party-monster-block">
+        <span class="party-monster-text">ポケモン⑤</span>
+        <%= f.text_area :fifth_pokemon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの名前を入力 ", maxlength:"7" %>
+        </div>
+        <div class="party-monster-block">
+        <span class="party-monster-text">特性</span>
+        <%= f.text_area :fifth_pokemon_special, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの特性を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">持ち物</span>
+        <%= f.text_area :fifth_pokemon_item, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの持ち物を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">性格</span>
+        <%= f.text_area :fifth_pokemon_temper_id, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの性格を入力 ", maxlength:"7" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">HP</span>
+        <%= f.text_area :fifth_pokemon_hp, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">攻撃</span>
+        <%= f.text_area :fifth_pokemon_attack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">防御</span>
+        <%= f.text_area :fifth_pokemon_defence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+
+        <span class="party-monster-number">特攻</span>
+        <%= f.text_area :fifth_pokemon_spattack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+         <div class="party-monster-block">
+        <span class="party-monster-number">特防</span>
+        <%= f.text_area :fifth_pokemon_spdefence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">素早さ</span>
+        <%= f.text_area :fifth_pokemon_speed, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技①</span>
+        <%= f.text_area :fifth_pokemon_first_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技②</span>
+        <%= f.text_area :fifth_pokemon_second_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技③</span>
+        <%= f.text_area :fifth_pokemon_third_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技④</span>
+        <%= f.text_area :fifth_pokemon_force_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+      </div>
+      <%# -------------5匹目------------------%>
+
+      <%# -------------6匹目------------------%>
+     <div class="party-monster">
+        <div class="party-monster-block">
+        <span class="party-monster-text">ポケモン⑥</span>
+        <%= f.text_area :sixth_pokemon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの名前を入力 ", maxlength:"7" %>
+        </div>
+        <div class="party-monster-block">
+        <span class="party-monster-text">特性</span>
+        <%= f.text_area :sixth_pokemon_special, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの特性を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">持ち物</span>
+        <%= f.text_area :sixth_pokemon_item, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの持ち物を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">性格</span>
+        <%= f.text_area :sixth_pokemon_temper_id, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"ポケモンの性格を入力 ", maxlength:"7" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">HP</span>
+        <%= f.text_area :sixth_pokemon_hp, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">攻撃</span>
+        <%= f.text_area :sixth_pokemon_attack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-number">防御</span>
+        <%= f.text_area :sixth_pokemon_defence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+
+        <span class="party-monster-number">特攻</span>
+        <%= f.text_area :sixth_pokemon_spattack, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+         <div class="party-monster-block">
+        <span class="party-monster-number">特防</span>
+        <%= f.text_area :sixth_pokemon_spdefence, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        
+        <span class="party-monster-number">素早さ</span>
+        <%= f.text_area :sixth_pokemon_speed, class:"pokemon-number-field", id:"pokemon-number-field", placeholder:"数値を入力", maxlength:"3" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技①</span>
+        <%= f.text_area :sixth_pokemon_first_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技②</span>
+        <%= f.text_area :sixth_pokemon_second_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技③</span>
+        <%= f.text_area :sixth_pokemon_third_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+
+        <div class="party-monster-block">
+        <span class="party-monster-text">技④</span>
+        <%= f.text_area :sixth_pokemon_force_weapon, class:"pokemon-name-field", id:"pokemon-name-field", placeholder:"技名を入力 ", maxlength:"10" %>
+        </div>
+      </div>
+      <%# -------------6匹目------------------%>
+    
+    </div>  
+
+
+      <div class="party-text">
+       <h2 class="party-text-tiltle">構築紹介文</h2>
+      <%= f.text_area :article_text, class:"article_text-field", id:"article_text-field", placeholder:"最大10,000文字まで入力可能 ", maxlength:"10000"  %>
+      </div>
+
+      <div class='contact-form-btn'>
+      <%= f.submit "内容を変更する" ,class:"contact-form-submit" %>
+      </div>
+      
+
+
+    <%end%>  
+  </div>  
+</div>  
