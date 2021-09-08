@@ -5,6 +5,4 @@ class Comment < ApplicationRecord
   with_options presence: true do
     validates :comment_text
   end
-
-
 end
