@@ -161,7 +161,7 @@
 
   .notice{
     margin: 0 auto;
-    margin-top: 1000px;
+    margin-top: 1200px;
   }
 
   .tweet{
@@ -181,6 +181,13 @@
   .right-intr{
     margin: 0 auto;
     margin-top: 5px;
+  }
+
+  .title-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
 

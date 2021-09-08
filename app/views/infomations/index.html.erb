@@ -4,9 +4,15 @@
 <div class="index-main">
 <div class="infomation-body">
  <div class="title-index">
-  <div class="site-title-index">
-      <span class="myu-logo"></span><h1 class="site-title-top">POKEbrary TOPページ</h1>
-  </div>
+    <div class="site-title-index">
+        <span class="myu-logo"></span><h1 class="site-title-top">POKEbrary TOPページ</h1>
+    </div>
+    <div class="battle-tool">
+      <span class="zacian-logo"></span>
+      <span class="tool-btn"><%= link_to "POKEbrary 対戦用ツール(タイマー・メモ)", tool_infomations_path, class: 'tool-btn' %>
+      </span>
+    </div>
+
   </div>
 
 
@@ -85,21 +91,33 @@
              </div>
              <div class="fifth-message-box" id="fifth-message-box">
               <p class="fifth-message">お問い合わせはこちらから!<br>
-              頑張って考えて返信します<br>
-              あんまりいじめないでね
+              注意事項をしっかり読んでから送ってね<br>
+              ご意見やご要望も!
               </p>
             </div>
          </div>   
         </div>
-        <div class="select-second"><%#-------------------------------------------------------------------- %>
+        <div class="select-second">
           <div class="right-intr">
-            <div class="right-intr-body"></div>
+            <div class="right-intr-body">
+              <div class="right-intr-text">｢POKEbrary｣はポケモン対戦に関する情報共有サイトです。
+                    新商品や新ポケモンに関する情報も発信しております。
+                    ポケモン攻略のツールとしてご活用ください。
+              </div> 
+              <div class="sns-area">
+                <a href="https://twitter.com/mhV4b7Q4f32EPxL" class="twitter-logo"></a>
+                <a href="#" class="youtube-logo"></a>
+                <a href="#" class="facebook-logo"></a>
+                <a href="#" class="insta-logo"></a>
+              <div>
+            </div>
+            </div>  
           </div>
           
           <div class="select-search">
             <%= form_with(url: search_articles_path, local: true, method: :get, class: "search-index") do |form| %>
             <%= form.text_field :keyword, placeholder: "ポケモン名で検索", class: "search-text" %>
-            <%= form.submit "検索", class: "search-btn" %>
+            <%= form.submit "検索", class: "select-search-btn" %>
             <% end %>
           </div>
           <div>
@@ -108,7 +126,7 @@
           </div>
         
         
-        </div >  <%#-------------------------------------------------------------------- %>  
+        </div > 
       </div>
 
     </div> 

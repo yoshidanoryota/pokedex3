@@ -14,6 +14,7 @@
       <%unless @articles.present? %>
       結果が見つかりません
       <%else%>
+      <span class="paginate-field"><%= paginate @articles %></span>
       <% @articles.each do |article| %>
       
         <div class="serch-article-link">
@@ -24,12 +25,12 @@
           <%= link_to "#{article.title}", article_path(article.id), class:'new-article-title' %>
 
           <div class="monster-choice">
-            <%= render partial: "monster01", locals: { article: article } %>
-            <%= render partial: "monster02", locals: { article: article } %>
-            <%= render partial: "monster03", locals: { article: article } %>
-            <%= render partial: "monster04", locals: { article: article } %>
-            <%= render partial: "monster05", locals: { article: article } %>
-            <%= render partial: "monster06", locals: { article: article } %>
+            <%= render partial: "monster001", locals: { article: article } %>
+            <%= render partial: "monster002", locals: { article: article } %>
+            <%= render partial: "monster003", locals: { article: article } %>
+            <%= render partial: "monster004", locals: { article: article } %>
+            <%= render partial: "monster005", locals: { article: article } %>
+            <%= render partial: "monster006", locals: { article: article } %>
           </div>
         </div>
 

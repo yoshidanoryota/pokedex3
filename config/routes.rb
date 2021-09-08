@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :infomations, only: [:index,:create,:destroy] do
     collection do
      get 'fresh'
+     get 'tool'
     end
   end
 

@@ -7,7 +7,21 @@
   display: inline-block;
 }
 
+.monster-mini-icon{
+  width: 70px;
+  height: 65px;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+}
+
 .monster-icon:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.monster-mini-icon:hover{
   cursor: pointer;
   opacity: 0.5;
 }

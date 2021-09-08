@@ -11,6 +11,8 @@ require("../clock")
 require("../ball")
 require("../modal")
 require("../calendar")
+require("../tool")
+
 //require("../header")
 
 require ("jquery")

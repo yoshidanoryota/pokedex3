@@ -15,10 +15,11 @@
 
 .title-index{
   margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .site-title-index{
-
   width: 500px;
   height: 60px;
   background-color: #ffffff;
@@ -47,6 +48,43 @@
   text-align: center;
   margin-right: 15px;
 }
+
+.tool-btn{
+  background-color: rgb(61, 79, 238);
+  margin-right: 110px;
+  
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  display: inline-block;
+  font-family:inherit;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffff;
+}
+
+.tool-btn:hover{
+  transform: scale(1.05);
+  transition-duration: 0.4s;
+}
+
+.zacian-logo{
+  width: 75px;
+  height: 75px;
+  background-image: url(zacian.png);
+  display: inline-block;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.battle-tool{
+  display: inline-flex;
+  align-items: center;
+}
+
+
 
 .select{
   width: 100%;
@@ -509,6 +547,15 @@
   background-color: rgb(255, 255, 255);
 }
 
+.select-search-btn{
+  height: 35px;
+  width: 50px;
+}
+
+.select-search{
+  width: 370px;
+}
+
 .search-index{
   margin: 10px 0;
 }
@@ -528,13 +575,87 @@
   width: 100%;
   height: 230px;
   border-radius: 5px;
-  
-  
   background-color:rgba(255,255,255,0.8);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-intr-text{
+  text-align: left;
+  margin-top: 35px;
+}
+
+.sns-area{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.twitter-logo{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-image: url(Twitter.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  border:1px solid #a6d0e9;
+}
+
+.twitter-logo:hover{
+  opacity: 0.7;
+}
+
+.youtube-logo{
+  display: inline-block;
+  width: 60px;
+  height: 55px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-image: url(youtube.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  background-color: #ffff;
+}
+
+.youtube-logo:hover{
+  opacity: 0.7;
+}
+
+.facebook-logo{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50px;
+  background-image: url(facebook.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+}
+
+.facebook-logo:hover{
+  opacity: 0.7;
 }
 
 
 
+.insta-logo{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 10px;
+  background-image: url(insta.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+}
+
+.insta-logo:hover{
+  opacity: 0.7;
+}
 
 
 
@@ -719,11 +840,114 @@ z-index: 1;
   opacity: 0.6;
 }
 
-
-
 /* ========== fresh ========== */
 
 
 
 
+/* ========== tool ========== */
+
+
+.tool-title{
+  margin-top: 25px;
+  margin-bottom: 35px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.timer-field{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffff;
+  width: 900px;
+  height: 110vh;
+  margin: 0 auto;
+  background-image: url(border.jpeg);
+  border-left: 2px solid rgb(61, 79, 238);
+  border-right: 2px solid rgb(61, 79, 238);
+}
+
+.time-form{
+  display: block;
+}
+
+.timer-text{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 38px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  border-radius: 10px;
+}
+
+.timer-sub{
+  font-size: 25px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.timer-button{
+  margin-right: 22px;
+  margin-top: 20px;
+}
+
+.timer-btn{
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.timer-btn:hover{
+  opacity: 0.7;
+}
+
+.party-field{
+  display: flex;
+  justify-content: center;
+}
+
+.my-party{
+  margin: 0px 50px 0px 50px;
+}
+
+.my-field{
+display: flex;
+align-items: center;
+
+}
+
+.party-text{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  border-bottom: 2px solid black;
+  width: 180px;
+  margin-bottom: 5px;
+}
+
+.tool-monster{
+    width: 45px;
+    height: 45px;
+    background-image: url(migawari.png);
+    display: inline-block;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+  }
+
+  .memo-area{
+    margin-top: 20px;
+  }
+
+  .memo-field{
+    margin-top: 10px;
+    width: 400px;
+    height: 100px;    
+  }
+
+  .memo-title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+  }
+
+
+/* ========== tool ========== */
 
